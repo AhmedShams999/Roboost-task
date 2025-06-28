@@ -4,6 +4,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "Roboost-Task": {
+      "i18n": {
+        "sourceLocale":"en-US",
+        "locales": {
+          "ar":"src/locale/messages.ar.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,11 +19,13 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "localize": true,
             "outputPath": "dist/roboost-task",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
-              "zone.js"
+              "zone.js",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
@@ -51,6 +59,13 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "ar": {
+              "localize": ["ar"],
+              "outputPath": "dist/Roboost-Task/ar",
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
             }
           },
           "defaultConfiguration": "production"
@@ -63,19 +78,27 @@
             },
             "development": {
               "buildTarget": "Roboost-Task:build:development"
+            },
+            "ar": {
+              "buildTarget": "Roboost-Task:build:ar"
             }
           },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n"
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "Roboost-Task:build",
+            "outputPath": "src/locale"
+          }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "polyfills": [
               "zone.js",
-              "zone.js/testing"
+              "zone.js/testing",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
@@ -92,5 +115,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

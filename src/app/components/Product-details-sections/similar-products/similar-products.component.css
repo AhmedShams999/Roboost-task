@@ -1,0 +1,13 @@
+.similar-products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .similar-products-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}

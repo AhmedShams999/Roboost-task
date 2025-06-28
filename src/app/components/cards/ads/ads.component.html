@@ -1,0 +1,12 @@
+<div class="ads-card" [ngStyle]="{'background-color': adsData.color}">
+  <div class="ads-image">
+    <img [src]="adsData.img" alt="ads-img" />
+  </div>
+  <div class="ads-info">
+    <h4>{{adsData.header}}</h4>
+    <p>
+      {{adsData.subText}}
+    </p>
+    <button class="shop-now-btn" i18n="@@shopping-now-btn">Shop now</button>
+  </div>
+</div>

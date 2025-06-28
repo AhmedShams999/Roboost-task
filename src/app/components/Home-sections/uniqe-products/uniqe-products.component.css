@@ -1,0 +1,19 @@
+.uniqe-products-section{
+  padding: 50px 0;
+}
+
+
+/* Demo Grid */
+.uniqe-products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .uniqe-products-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}

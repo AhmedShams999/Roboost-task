@@ -1,0 +1,105 @@
+.came-new-section {
+  background-color: var(--light-color);
+  position: relative;
+  min-height: 60vh;
+  padding: 50px 0;
+}
+
+.slider-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.slider-btns button {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-btns button:hover{
+    background-color: var(--primary-color);
+}
+
+.slider-btns button svg path {
+  fill: var(--secondary-color);
+  transition: fill 0.3s ease;
+}
+.slider-btns button:hover svg path{
+  fill: white;
+}
+
+
+/* Animation for product cards */
+.came-new-container app-product {
+  animation: slideIn 0.5s ease-out;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.came-new-container app-product:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.came-new-container app-product:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.came-new-container app-product:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.came-new-container app-product:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive design */
+/* @media (max-width: 1200px) {
+  .came-new-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+} */
+
+.came-new-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .came-new-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+
+/* @media (max-width: 480px) {
+  .came-new-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  
+  .slider-btns {
+    margin-top: 20px;
+  }
+} */

@@ -1,0 +1,45 @@
+<section class="best-offers-section"
+
+  [ngStyle]="{
+      'background-image': whichToShow !== 'showImg' ? 'url(/images/img/best-offers-banner2.png)' : 'url(/images/img/best-offers-banner.png)',
+
+  }"
+>
+  <div class="container">
+    <div class="best-offers-content" 
+
+    [ngStyle]="{
+      'flex-direction': whichToShow !== 'showImg' ? 'column' : 'row',
+    }">
+
+      <div class="best-offers-header"
+       [ngStyle]="{
+        'align-items': whichToShow !== 'showImg' ? 'center' : 'start',
+        'flex': whichToShow !== 'showImg' ? 'auto' : '1'
+
+       }"
+      >
+        <h2 i18n="@@best-offers-section.offers">Best Discounts 2022</h2>
+        <p [ngStyle]="{'text-align': whichToShow !== 'showImg' ? 'center' : 'start'}" i18n="@@best-offers-section.offers-des">Salla Store provides you with everything you need from electronics and home furniture in addition to the best discounts on products. Shop now and enjoy all the discounts on products.</p>
+        <button class="cta-button" i18n="@@show-more-btn">View More</button>
+      </div>
+      @if(whichToShow == 'showImg'){
+        <div class="best-offers-image">
+          <img src="/images/img/lap.png" alt="labs-photo">
+        </div>
+      }
+      @else {
+         <div class="slider-dots">
+          @for (slide of slides; track $index) {
+            <button
+              class="dot"
+              [class.active]="$index === currentSlide"
+            ></button>
+
+          }
+        </div>
+      }
+     
+    </div>
+  </div>
+</section>

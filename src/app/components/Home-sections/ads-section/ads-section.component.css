@@ -1,0 +1,19 @@
+.ads-section{
+  position: relative;
+  min-height: 60vh;
+  padding: 50px 0;
+}
+
+.ads-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .ads-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}

@@ -1,0 +1,13 @@
+<div class="route-back-container">
+  <div class="breadcrumb-navigation">
+    <span class="main-link" (click)="navigateToHome()" i18n="@@main_link">Home</span>
+    @for (route of routesBack; track $index) {
+   
+        <span class="separator">/</span>
+        <a 
+        [ngClass]="router.url == route.routeLink ? 'current-page':'main-link'" 
+        [routerLink]="route.routeLink">{{route.routeName}}</a>
+      
+    }
+  </div>
+</div>

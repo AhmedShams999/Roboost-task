@@ -1,0 +1,255 @@
+<div class="container">
+  <app-route-back [routesBack]="routeBack"></app-route-back>
+
+  <div class="register-container">
+    <!-- Left side - Illustration -->
+    <div class="register-section">
+      <div class="register-header">
+        <h1 class="register-title" i18n="@@register-title">
+          New with us? Register now
+        </h1>
+        <p class="register-subtitle" i18n="@@register-subtitle">
+          Registering on this site allows you to access your order status and
+          history. Simply fill out the fields below, and we'll create a new
+          account for you as soon as possible.
+        </p>
+      </div>
+
+      <!-- Use [formGroup] for reactive forms and (ngSubmit) for form submission -->
+      <form
+        [formGroup]="registerForm"
+        (ngSubmit)="onSubmit()"
+        class="register-form"
+      >
+        <div class="form-group">
+          <label class="form-label" for="username" i18n="@@name-label">Name</label>
+          <!-- Use formControlName for reactive forms -->
+          <div class="input-container">
+            <input
+              type="text"
+              id="username"
+              formControlName="username"
+              class="custom-input"
+              placeholder="First Name"
+              i18n-placeholder="@@name-placeholder"
+            />
+            <img
+              src="/images/Icons/User-input.svg"
+              class="email-input"
+              i18n-alt="@@email-input-alt"
+              alt="Email input icon"
+              [ngStyle]="{
+                  right: locale === 'ar' ? '10px' : null,
+                  left: locale === 'en-US' ? '10px' : null
+                }"
+            />
+
+          </div>
+          <!-- Error messages for name -->
+          <div
+            *ngIf="
+              getFormControl('username')?.invalid &&
+              (getFormControl('username')?.dirty || getFormControl('username')?.touched)
+            "
+            class="error-message"
+          >
+            <div *ngIf="getFormControl('username')?.errors?.['required']">
+              Username is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email" i18n="@@email-label"
+            >Email</label
+          >
+          <div class="input-container">
+            <input
+              type="email"
+              id="email"
+              formControlName="email"
+              class="custom-input"
+              placeholder="Enter your email"
+              i18n-placeholder="@@email-placeholder"
+            />
+            <img
+              src="/images/Icons/input-mail.svg"
+              class="email-input"
+              i18n-alt="@@email-input-alt"
+              alt="Email input icon"
+              [ngStyle]="{
+                right: locale === 'ar' ? '10px' : null,
+                left: locale === 'en-US' ? '10px' : null
+              }"
+            />
+          </div>
+          <!-- Use formControlName for reactive forms -->
+          <!-- Error messages for email -->
+          <div
+            *ngIf="
+              getFormControl('email')?.invalid &&
+              (getFormControl('email')?.dirty ||
+                getFormControl('email')?.touched)
+            "
+            class="error-message"
+          >
+            <div *ngIf="getFormControl('email')?.errors?.['required']">
+              Email is required.
+            </div>
+            <div *ngIf="getFormControl('email')?.errors?.['email']">
+              Please enter a valid email address.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="password" i18n="@@password-label"
+            >Password</label
+          >
+          <div class="input-container">
+
+            <input
+              [type]="showPassword ? 'text' : 'password'"
+              id="password"
+              formControlName="password"
+              class="custom-input"
+              placeholder="Enter your password"
+              i18n-placeholder="@@password-placeholder"
+            />
+            <img
+              src="/images/Icons/input-password.svg"
+              class="password-input"
+              i18n-alt="@@password-input-alt"
+              alt="Password input icon"
+              [ngStyle]="{
+                right: locale === 'ar' ? '10px' : null,
+                left: locale === 'en-US' ? '10px' : null
+              }"
+            />
+            <img
+              src="/images/Icons/input-password-eye.svg"
+              class="password-eye-input"
+              (click)="togglePasswordVisibility('password')"
+              i18n-alt="@@password-eye-alt"
+              alt="Password visibility toggle icon"
+              [ngStyle]="{'left': locale === 'ar' ? '15px' : null, 'right': locale === 'en-US' ? '15px' : null,}"
+            />
+          </div>
+          <!-- Bind type based on showPassword state -->
+          <!-- Error messages for password -->
+          <div
+            *ngIf="
+              getFormControl('password')?.invalid &&
+              (getFormControl('password')?.dirty ||
+                getFormControl('password')?.touched)
+            "
+            class="error-message"
+          >
+            <div *ngIf="getFormControl('password')?.errors?.['required']">
+              Password is required.
+            </div>
+            <div *ngIf="getFormControl('password')?.errors?.['minlength']">
+              Password must be at least 6 characters long.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label
+            class="form-label"
+            for="confirmPassword"
+            i18n="@@confirmPassword-label"
+            >Confirm password</label
+          >
+          <!-- Bind type based on showConfirmPassword state -->
+           <div class="input-container">
+
+             <input
+               [type]="showConfirmPassword ? 'text' : 'password'"
+               id="confirmPassword"
+               formControlName="confirmPassword"
+               class="custom-input"
+               placeholder="Enter your confirm password"
+               i18n-placeholder="@@confirmPassword-placeholder"
+             />
+             <img
+               src="/images/Icons/input-password.svg"
+               class="password-input"
+               i18n-alt="@@password-input-alt"
+               alt="Password input icon"
+               [ngStyle]="{
+                 right: locale === 'ar' ? '10px' : null,
+                 left: locale === 'en-US' ? '10px' : null
+               }"
+             />
+             <img
+               src="/images/Icons/input-password-eye.svg"
+               class="password-eye-input"
+               (click)="togglePasswordVisibility('confirmPassword')"
+               i18n-alt="@@password-eye-alt"
+               alt="Password visibility toggle icon"
+               [ngStyle]="{'left': locale === 'ar' ? '15px' : null, 'right': locale === 'en-US' ? '15px' : null,}"
+             />
+           </div>
+          <!-- Error messages for confirm password -->
+          <div
+            *ngIf="
+              getFormControl('confirmPassword')?.invalid &&
+              (getFormControl('confirmPassword')?.dirty ||
+                getFormControl('confirmPassword')?.touched)
+            "
+            class="error-message"
+          >
+            <div
+              *ngIf="getFormControl('confirmPassword')?.errors?.['required']"
+            >
+              Confirm password is required.
+            </div>
+            <div
+              *ngIf="getFormControl('confirmPassword')?.errors?.['passwordMismatch']"
+            >
+              Passwords do not match.
+            </div>
+          </div>
+        </div>
+
+        <!-- Display general submission error -->
+        <div *ngIf="submitError" class="error-message">
+          {{ submitError }}
+        </div>
+
+        <!-- Disable button if form is invalid or submitting -->
+        <button
+          type="submit"
+          class="register-button"
+        >
+        @if (isSubmitting) {
+          <app-loading></app-loading>
+        }@else {
+          <p i18n="@@register-button">Create account</p>
+        }
+        </button>
+
+        <div class="create-account">
+          <a routerLink="/login" i18n="@@login-account">Login</a>
+          <!-- Updated href -->
+        </div>
+      </form>
+    </div>
+
+    <div class="seperate-line">
+      <hr />
+    </div>
+
+    <!-- Right side - Illustration -->
+    <div class="illustration-section">
+      <div class="person-container">
+        <img
+          src="/images/img/register-illustrator.svg"
+          alt="register illustration"
+          i18n-alt="@@register-illustrator-alt"
+        />
+      </div>
+    </div>
+  </div>
+</div>

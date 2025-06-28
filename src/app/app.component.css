@@ -1,0 +1,29 @@
+.language-switcher {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #007bff;
+  background: transparent;
+  color: #007bff;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.me-2 {
+  margin-right: 0.5rem;
+}

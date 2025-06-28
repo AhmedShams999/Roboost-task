@@ -1,0 +1,176 @@
+<header class="header">
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-content">
+        <div class="top-bar-right">
+          <div class="contact-info">
+            <div class="--innerDiv">
+              <img src="images/Icons/call-calling.svg" i18n-alt="@@call-icon-alt" alt="call-icon">
+              <span i18n="@@phone-number">+966556764472</span>
+            </div>
+            <hr />
+            <div class="--innerDiv">
+              <img src="images/Icons/email.svg" i18n-alt="@@email-icon-alt" alt="email-icon">
+              <span i18n="@@email-address">Supportsaella.sa</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="top-bar-left">
+          <div class="--innerDiv">
+            <img src="images/Icons/lang.svg" i18n-alt="@@lang-icon-alt" alt="lang-icon">
+            <span i18n="@@language-currency" class="welcome-text">Arabic - SAR</span>
+          </div>
+          <hr />
+          <span i18n="@@favorites" class="welcome-text">Favorites</span>
+          <hr />
+          <span i18n="@@return-policy" class="welcome-text">Return or Exchange Policy</span>
+          <hr />
+          <span i18n="@@contact-us" class="welcome-text">Contact Us</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <div class="main-header">
+    <div class="container">
+      <div class="header-content">
+        <!-- Logo -->
+        <div class="logo" (click)="onLogoClick()">
+          <img src="/images/Icons/Logo.svg" i18n-alt="@@logo-icon-alt" alt="Logo" class="logo-img">
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+          <div class="search-wrapper">
+            <input 
+              type="text" 
+              i18n-placeholder="@@search-placeholder" 
+              placeholder="Search for what you want"
+              class="search-input"
+              (input)="onSearch($event)"
+            >
+            <button class="search-btn">
+              <img src="/images/Icons/Search.svg" class="search-icon" i18n-alt="@@search-icon-alt" alt="search-icon">
+            </button>
+          </div>
+        </div>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <!-- Login Button -->
+          <div class="login-section">
+            <div class="login-container" (click)="onLoginClick()">
+              @if(authUser){
+                <div class="user-icon-wrapper">
+                  <img [src]="authUser.image" class="user-icon" i18n-alt="@@user-icon-alt" alt="user-icon">
+                </div>
+                <div class="login-text-wrapper">
+                  <span i18n="@@welcome-message" class="welcome-text">Welcome</span>
+                  <div class="login-dropdown">
+                    <span class="login-text">{{authUser.username}}</span>
+                  </div>
+                </div>
+
+              }@else {
+                <div class="user-icon-wrapper">
+                  <img src="/images/Icons/user.svg" class="user-icon" i18n-alt="@@user-icon-alt" alt="user-icon">
+                </div>
+                <div class="login-text-wrapper">
+                  <span i18n="@@welcome-message" class="welcome-text">Welcome</span>
+                  <div class="login-dropdown">
+                    <span i18n="@@login-label" class="login-text">Login</span>
+                    <img src="/images/Icons/arrow.svg" i18n-alt="@@arrow-icon-alt" alt="arrow-icon">
+                  </div>
+                </div>
+              }
+            </div>
+          </div>
+          <!-- Cart -->
+          <div class="cart-container" (click)="onCartClick()">
+            <div class="cart-wrapper">
+              <div class="cart-icon-wrapper">
+                <img src="/images/Icons/cart.svg" class="cart-icon" i18n-alt="@@cart-icon-alt" alt="cart-icon">
+                <span class="cart-badge">{{ cartItemCount }}</span>
+              </div>
+              <div class="cart-text-wrapper">
+                <span i18n="@@cart-label" class="cart-text">Shopping Cart</span>
+                <span class="cart-price">{{ currencyValue }} {{ currency }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Menu -->
+  <nav class="navigation">
+    <div class="container">
+      <ul class="nav-menu">
+        <li class="nav-item dropdown">
+          <a routerLink="/products" class="nav-link">
+            <span i18n="@@all-categories">All Categories</span>
+            <img src="images/Icons/arrow-down.svg" class="dropdown-icon" i18n-alt="@@dropdown-icon-alt" alt="dropdown-icon">
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">
+            <span i18n="@@electronics">Electronics</span>
+            <img src="images/Icons/arrow-down.svg" class="dropdown-icon" i18n-alt="@@dropdown-icon-alt" alt="dropdown-icon">
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">
+            <span i18n="@@accessories">Accessories</span>
+            <img src="images/Icons/arrow-down.svg" class="dropdown-icon" i18n-alt="@@dropdown-icon-alt" alt="dropdown-icon">
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">
+            <span i18n="@@external-cables">External Cables</span>
+            <img src="images/Icons/arrow-down.svg" class="dropdown-icon" i18n-alt="@@dropdown-icon-alt" alt="dropdown-icon">
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">
+            <span i18n="@@computer-monitors">Computer Monitors</span>
+            <img src="images/Icons/arrow-down.svg" class="dropdown-icon" i18n-alt="@@dropdown-icon-alt" alt="dropdown-icon">
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">
+            <span i18n="@@accessories-nav">Accessories</span>
+            <img src="images/Icons/arrow-down.svg" class="dropdown-icon" i18n-alt="@@dropdown-icon-alt" alt="dropdown-icon">
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">
+            <span i18n="@@electric-amplifiers">Electric Amplifiers</span>
+            <img src="images/Icons/arrow-down.svg" class="dropdown-icon" i18n-alt="@@dropdown-icon-alt" alt="dropdown-icon">
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">
+            <span i18n="@@electric-amplifiers-duplicate">Electric Amplifiers</span>
+            <img src="images/Icons/arrow-down.svg" class="dropdown-icon" i18n-alt="@@dropdown-icon-alt" alt="dropdown-icon">
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">
+            <span i18n="@@electronics-nav">Electronics</span>
+            <img src="images/Icons/arrow-down.svg" class="dropdown-icon" i18n-alt="@@dropdown-icon-alt" alt="dropdown-icon">
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">
+            <span i18n="@@headphones">Headphones</span>
+            <img src="images/Icons/arrow-down.svg" class="dropdown-icon" i18n-alt="@@dropdown-icon-alt" alt="dropdown-icon">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

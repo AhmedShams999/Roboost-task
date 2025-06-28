@@ -1,0 +1,22 @@
+.category-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.category-info {
+  text-align: center;
+}
+.category-info h4 {
+  color: var(--dark-color);
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.category-info p {
+  color: var(--secondary-color);
+  margin: 0;
+  font-size: 16px;
+}

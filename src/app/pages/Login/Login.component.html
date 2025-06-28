@@ -1,0 +1,169 @@
+<div class="container">
+  <app-route-back [routesBack]="routeBack"></app-route-back>
+
+  <div class="login-container">
+    <!-- Left side - Illustration -->
+    <div class="login-section">
+      <div class="login-header">
+        <h1 class="login-title" i18n="@@login-title">
+          Do you have an account? Log in
+        </h1>
+        <p class="login-subtitle" i18n="@@login-subtitle">
+          Log in to track your orders and easily access your
+          <br />
+          favorites list
+        </p>
+      </div>
+
+      <!-- Use [formGroup] for reactive forms and (ngSubmit) for form submission -->
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form">
+        <div class="form-group">
+          <label class="form-label" for="email" i18n="@@email-label"
+            >Email</label
+          >
+          <!-- Use formControlName for reactive forms -->
+          <div class="input-container">
+            <input
+              type="email"
+              id="email"
+              formControlName="email"
+              class="custom-input"
+              placeholder="Enter your email"
+              i18n-placeholder="@@email-placeholder"
+            />
+            <img
+              src="/images/Icons/input-mail.svg"
+              class="email-input"
+              i18n-alt="@@email-input-alt"
+              alt="Email input icon"
+              [ngStyle]="{
+                right: locale === 'ar' ? '10px' : null,
+                left: locale === 'en-US' ? '10px' : null
+              }"
+            />
+          </div>
+          <!-- Error messages for email -->
+          <div
+            *ngIf="
+              getFormControl('email')?.invalid &&
+              (getFormControl('email')?.dirty ||
+                getFormControl('email')?.touched)
+            "
+            class="error-message"
+          >
+            <div *ngIf="getFormControl('email')?.errors?.['required']">
+              Email is required.
+            </div>
+            <div *ngIf="getFormControl('email')?.errors?.['email']">
+              Please enter a valid email address.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="password" i18n="@@password-label"
+            >Password</label
+          >
+          <!-- Bind type based on showPassword state -->
+          <div class="input-container">
+            <input
+              [type]="showPassword ? 'text' : 'password'"
+              id="password"
+              formControlName="password"
+              class="custom-input"
+              placeholder="Enter your password"
+              i18n-placeholder="@@password-placeholder"
+            />
+            <img
+              src="/images/Icons/input-password.svg"
+              class="password-input"
+              i18n-alt="@@password-input-alt"
+              alt="Password input icon"
+              [ngStyle]="{
+                right: locale === 'ar' ? '10px' : null,
+                left: locale === 'en-US' ? '10px' : null
+              }"
+            />
+            <img
+              src="/images/Icons/input-password-eye.svg"
+              class="password-eye-input"
+              (click)="togglePasswordVisibility()"
+              i18n-alt="@@password-eye-alt"
+              alt="Password visibility toggle icon"
+              [ngStyle]="{'left': locale === 'ar' ? '15px' : null, 'right': locale === 'en-US' ? '15px' : null,}"
+            />
+          </div>
+          <!-- Error messages for password -->
+          <div
+            *ngIf="
+              getFormControl('password')?.invalid &&
+              (getFormControl('password')?.dirty ||
+                getFormControl('password')?.touched)
+            "
+            class="error-message"
+          >
+            <div *ngIf="getFormControl('password')?.errors?.['required']">
+              Password is required.
+            </div>
+            <div *ngIf="getFormControl('password')?.errors?.['minlength']">
+              Password must be at least 6 characters long.
+            </div>
+          </div>
+        </div>
+
+        <div class="remember-forgot">
+          <a href="#" class="forgot-password" i18n="@@forgot-password"
+            >Forgot password?</a
+          >
+          <label class="remember-me">
+            <span class="remember-text" i18n="@@remember-me">Remember me</span>
+            <!-- Use formControlName for reactive forms -->
+            <input
+              type="checkbox"
+              class="checkbox"
+              id="remember"
+              formControlName="rememberMe"
+            />
+            <span class="checkbox-custom"></span>
+          </label>
+        </div>
+
+        <!-- Display general submission error -->
+        <div *ngIf="submitError" class="error-message">
+          {{ submitError }}
+        </div>
+
+        <!-- Disable button if form is invalid or submitting -->
+        <button type="submit" class="login-button">
+          @if(isSubmitting){
+          <app-loading></app-loading>
+          }@else {
+          <p i18n="@@login-button">Log in</p>
+          }
+        </button>
+
+        <div class="create-account">
+          <a routerLink="/register" i18n="@@create-account"
+            >Create new account</a
+          >
+          <!-- Updated href -->
+        </div>
+      </form>
+    </div>
+
+    <div class="seperate-line">
+      <hr />
+    </div>
+
+    <!-- Right side - Illustration -->
+    <div class="illustration-section">
+      <div class="person-container">
+        <img
+          src="/images/img/login-illustrator.svg"
+          alt="Login illustration"
+          i18n-alt="@@login-illustrator-alt"
+        />
+      </div>
+    </div>
+  </div>
+</div>

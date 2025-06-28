@@ -1,0 +1,52 @@
+<section class="came-new-section">
+  <div class="container">
+    <div class="sec-header">
+      <div class="header-content">
+        <h2 i18n="@@came-new.header-title">New arrival</h2>
+        <p i18n="@@came-new.header-subtitle">Shop the latest featured products added recently.</p>
+      </div>
+      <div class="slider-btns">
+         <button 
+          class="prev-btn" 
+          (click)="slideNext()" 
+          [disabled]="!canSlideNext"
+          [class.disabled]="!canSlideNext">
+          @if(locale == 'ar'){
+            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.35897 12.0001C1.18246 12.0001 1.00595 11.9322 0.87017 11.7963C0.598615 11.5245 0.598615 11.0896 0.87017 10.8178L5.69026 5.99333L0.87017 1.18246C0.598615 0.910654 0.598615 0.475773 0.87017 0.203973C1.14172 -0.0678281 1.57621 -0.0678281 1.84777 0.203973L7.1295 5.4905C7.2517 5.61281 7.33317 5.78948 7.33317 5.97974C7.33317 6.15641 7.26528 6.37385 7.1295 6.49616L1.84777 11.7963C1.71199 11.9322 1.53548 12.0001 1.35897 12.0001Z" fill="#EEEEEE"/>
+            </svg>
+
+          }
+          @else{
+            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.64071 12.0003C6.4642 12.0003 6.28769 11.9323 6.15191 11.7963L0.87017 6.50364C0.74797 6.38119 0.666504 6.20432 0.666504 6.01384C0.666504 5.83696 0.734393 5.61927 0.87017 5.49682L6.15191 0.204207C6.42346 -0.0679064 6.85795 -0.0679064 7.1295 0.204207C7.40106 0.476321 7.40106 0.911703 7.1295 1.18382L2.30941 6.00023L7.1295 10.8303C7.40106 11.1024 7.40106 11.5377 7.1295 11.8099C6.99373 11.9323 6.81722 12.0003 6.64071 12.0003Z" fill="#EEEEEE"/>
+            </svg>
+          }
+        </button>
+        <button 
+          class="next-btn" 
+          (click)="slidePrev()" 
+          [disabled]="!canSlidePrev"
+          [class.disabled]="!canSlidePrev">
+          @if(locale == 'ar'){
+            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.64071 12.0003C6.4642 12.0003 6.28769 11.9323 6.15191 11.7963L0.87017 6.50364C0.74797 6.38119 0.666504 6.20432 0.666504 6.01384C0.666504 5.83696 0.734393 5.61927 0.87017 5.49682L6.15191 0.204207C6.42346 -0.0679064 6.85795 -0.0679064 7.1295 0.204207C7.40106 0.476321 7.40106 0.911703 7.1295 1.18382L2.30941 6.00023L7.1295 10.8303C7.40106 11.1024 7.40106 11.5377 7.1295 11.8099C6.99373 11.9323 6.81722 12.0003 6.64071 12.0003Z" fill="#EEEEEE"/>
+            </svg>
+          }
+          @else {
+            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.35897 12.0001C1.18246 12.0001 1.00595 11.9322 0.87017 11.7963C0.598615 11.5245 0.598615 11.0896 0.87017 10.8178L5.69026 5.99333L0.87017 1.18246C0.598615 0.910654 0.598615 0.475773 0.87017 0.203973C1.14172 -0.0678281 1.57621 -0.0678281 1.84777 0.203973L7.1295 5.4905C7.2517 5.61281 7.33317 5.78948 7.33317 5.97974C7.33317 6.15641 7.26528 6.37385 7.1295 6.49616L1.84777 11.7963C1.71199 11.9322 1.53548 12.0001 1.35897 12.0001Z" fill="#EEEEEE"/>
+            </svg>
+          }
+        
+        </button>
+       
+      </div>
+    </div>
+    <div class="came-new-container">
+     <app-product 
+        *ngFor="let productIndex of visibleProductsCount; trackBy: trackByIndex">
+      </app-product>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,1545 @@
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" target-language="ar" datatype="plaintext" original="ng2.template">
+    <body>
+    <trans-unit id="products-list.searchProducts-placeholder" datatype="html">
+      <source>Search products...</source>
+      <target>ابحث عن المنتجات...</target>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.html</context>
+        <context context-type="linenumber">109,111</context>
+      </context-group>
+    </trans-unit>
+    <trans-unit id="products-list.from" datatype="html">
+      <source>From</source>
+      <target>من</target>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.html</context>
+        <context context-type="linenumber">255,256</context>
+      </context-group>
+    </trans-unit>
+    <trans-unit id="products-list.to" datatype="html">
+      <source>To</source>
+      <target>إلى</target>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.html</context>
+        <context context-type="linenumber">256,258</context>
+      </context-group>
+    </trans-unit>
+    <trans-unit id="product-list.sorting" datatype="html">
+      <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Sort by: <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>High to Low</source>
+      <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>الترتيب حسب: <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>الأعلى إلى الأدنى</target>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.html</context>
+        <context context-type="linenumber">346,347</context>
+      </context-group>
+    </trans-unit>
+    <trans-unit id="products-list.allProductsLink" datatype="html">
+      <source>All products</source>
+      <target>جميع المنتجات</target>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
+        <context context-type="linenumber">74</context>
+      </context-group>
+    </trans-unit>
+    <trans-unit id="products-list.category" datatype="html">
+      <source>category</source>
+      <target>الفئة</target>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
+        <context context-type="linenumber">88</context>
+      </context-group>
+    </trans-unit>
+    <trans-unit id="products-list.all" datatype="html">
+      <source>All</source>
+      <target>الكل</target>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
+        <context context-type="linenumber">91</context>
+      </context-group>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
+        <context context-type="linenumber">98</context>
+      </context-group>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
+        <context context-type="linenumber">112</context>
+      </context-group>
+    </trans-unit>
+    <trans-unit id="products-list.brand" datatype="html">
+      <source>Brand</source>
+      <target>العلامة التجارية</target>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
+        <context context-type="linenumber">95</context>
+      </context-group>
+    </trans-unit>
+    <trans-unit id="products-list.rateing" datatype="html">
+      <source>Rateing</source>
+      <target>التقييم</target>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
+        <context context-type="linenumber">107</context>
+      </context-group>
+    </trans-unit>
+    <trans-unit id="products-list.5-star" datatype="html">
+      <source>5-star</source>
+      <target>5 نجوم</target>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
+        <context context-type="linenumber">125</context>
+      </context-group>
+    </trans-unit>
+    <trans-unit id="products-list.4-star" datatype="html">
+      <source>4-star</source>
+      <target>4 نجوم</target>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
+        <context context-type="linenumber">138</context>
+      </context-group>
+    </trans-unit>
+    <trans-unit id="products-list.3-star" datatype="html">
+      <source>3-star</source>
+      <target>3 نجوم</target>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
+        <context context-type="linenumber">151</context>
+      </context-group>
+    </trans-unit>
+    <trans-unit id="products-list.2-star" datatype="html">
+      <source>2-star</source>
+      <target>نجمتان</target>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
+        <context context-type="linenumber">164</context>
+      </context-group>
+    </trans-unit>
+    <trans-unit id="products-list.1-star" datatype="html">
+      <source>1-star</source>
+      <target>نجمة واحدة</target>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
+        <context context-type="linenumber">177</context>
+      </context-group>
+    </trans-unit>
+    <trans-unit id="products-list.price" datatype="html">
+      <source>Price</source>
+      <target>السعر</target>
+      <context-group purpose="location">
+        <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
+        <context context-type="linenumber">191</context>
+      </context-group>
+    </trans-unit>
+      <trans-unit id="route-back.all-products" datatype="html">
+        <source>All products</source>
+        <target>كل المنتجات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Product-details/Product-details.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="route-back.Product-details" datatype="html">
+        <source>Product details</source>
+        <target>تفاصيل المنتج</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Product-details/Product-details.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-tapy-payment" datatype="html">
+        <source>SAR Pay a quarter of the value 11.77. Pay in installments over 3 months. No fees.</source>
+        <target>SAR ادفع ربع القيمة 11.77 .قسطه على 3 أشهر. بدون رسوم</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">271,272</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-spoti-payment" datatype="html">
+        <source>We will divide the payment for your purchases into four installments at no cost.</source>
+        <target>سنقسط الدفع لمشترياتك علي أربع أقساط بدون تكلفة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">279,280</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-tamra-payment" datatype="html">
+        <source>Pay only 586 SAR in 3 installments without fees.</source>
+        <target>ادفع 586 ر.س فقط علي 3 دفعات بدون رسوم</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">287,288</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="know-more-btn" datatype="html">
+        <source>know more</source>
+        <target>أعرف أكثر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">272,274</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">280,282</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">288,290</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="similar-products.title" datatype="html">
+        <source>Similar products</source>
+        <target>منتجات مشابهة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/similar-products/similar-products.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="similar-products.subtitle" datatype="html">
+        <source>Shop the latest featured products added recently.</source>
+        <target>تسوق احدث المنتجات المميزة المضافة جديد</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/similar-products/similar-products.component.html</context>
+          <context context-type="linenumber">6,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-product-image-alt" datatype="html">
+        <source>product</source>
+        <target>منتج</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-samsung-logo-alt" datatype="html">
+        <source>Samsung</source>
+        <target>سامسونج</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-product-title" datatype="html">
+        <source> iPhone 11 Mobile Dual SIM &amp; 64GB Plus Two Cameras with High Quality </source>
+        <target>آيفون 11 موبايل شريحتين و 64 جيجابايت بالإضافة إلى كاميرتين عالية الجودة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">34,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-sent-icon-alt" datatype="html">
+        <source>sent-icon</source>
+        <target>أيقونة الإرسال</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-buyer-text" datatype="html">
+        <source>Buyer <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;highlight&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{16}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> units</source>
+        <target>المتبقى <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;highlight&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{16}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> وحدة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-fire-icon-alt" datatype="html">
+        <source>fire-icon</source>
+        <target>أيقونة النار</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-purchased-text" datatype="html">
+        <source>Purchased <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;highlight&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{250}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> times</source>
+        <target>تم شراءه <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;highlight&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{250}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> مرة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-reviews-text" datatype="html">
+        <source>(<x id="INTERPOLATION" equiv-text="{{10}}"/>) Reviews</source>
+        <target>(<x id="INTERPOLATION" equiv-text="{{10}}"/>) تقييمات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">113,114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-add-to-favorites-text" datatype="html">
+        <source>Add to Favorites</source>
+        <target>إضافة إلى المفضلة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">149,153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-share-icon-alt" datatype="html">
+        <source>share-icon</source>
+        <target>أيقونة المشاركة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-share-product-text" datatype="html">
+        <source>Share Product</source>
+        <target>مشاركة المنتج</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">157,161</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-product-description" datatype="html">
+        <source> iPhone 11 dual SIM mobile for communication with 64GB internal memory and supports 4G LTE network technology with Miss application for commands, responsive, global version </source>
+        <target>آيفون 11 موبايل شريحتين للاتصال مع ذاكرة داخلية 64 جيجابايت ويدعم تقنية شبكة 4G LTE مع تطبيق للأوامر، سريع الاستجابة، نسخة عالمية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">163,168</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-view-more-link" datatype="html">
+        <source>View More</source>
+        <target>عرض المزيد</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">169,172</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-tag-electronics" datatype="html">
+        <source>Electronics</source>
+        <target>إلكترونيات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">173,175</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-tag-mobiles" datatype="html">
+        <source>Mobiles</source>
+        <target>موبايلات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">175,177</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-tag-iphone" datatype="html">
+        <source>iPhone</source>
+        <target>آيفون</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">177,179</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-tag-discounts" datatype="html">
+        <source>Discounts</source>
+        <target>خصومات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">179,181</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-tag-electronics-2" datatype="html">
+        <source>Electronics</source>
+        <target>إلكترونيات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">181,184</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-select-quantity-label" datatype="html">
+        <source>Select Quantity</source>
+        <target>اختر الكمية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">187,188</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-quantity-input-placeholder" datatype="html">
+        <source>Quantity</source>
+        <target>الكمية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">197,198</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-quick-btn" datatype="html">
+        <source>Quick Purchase</source>
+        <target>شراء سريع</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">235,237</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-add-btn" datatype="html">
+        <source>Add to Cart</source>
+        <target>إضافة إلى السلة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">258,261</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-payment-icon-alt" datatype="html">
+        <source>payment-icon</source>
+        <target>أيقونة الدفع</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">268</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">276</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">284</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ads.title" datatype="html">
+        <source>Faster and richer processing</source>
+        <target>معالجة أسرع وأكثر ثراءً</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/ads-section/ads-section.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/ads-section/ads-section.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/ads-section/ads-section.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ads.subtitle" datatype="html">
+        <source>Faster than EXPEED 4, EXPEED 5 processes 45.7 MP of data to reduce noise</source>
+        <target>أسرع من EXPEED 4 ، يعالج EXPEED 5 بسرعة 45.7 ميجابكسل من البيانات لتقليل التشويش</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/ads-section/ads-section.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/ads-section/ads-section.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/ads-section/ads-section.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="came-new.header-title" datatype="html">
+        <source>New arrival</source>
+        <target>وصل حديثا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/came-new-section/came-new-section.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="came-new.header-subtitle" datatype="html">
+        <source>Shop the latest featured products added recently.</source>
+        <target>تسوق احدث المنتجات المميزة المضافة جديد</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/came-new-section/came-new-section.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="category.header-title" datatype="html">
+        <source>Shop by categories</source>
+        <target>تسوق حسب الفئات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/category-section/category-section.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="category.header-subtitle" datatype="html">
+        <source>Shop the latest featured products added recently.</source>
+        <target>تسوق أحدث المنتجات المميزة التي تمت إضافتها مؤخرًا.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/category-section/category-section.component.html</context>
+          <context context-type="linenumber">6,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="special-products.title" datatype="html">
+        <source>Special products</source>
+        <target>منتجات خاصة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/special-products-section/special-products-section.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="special-products.subtitle" datatype="html">
+        <source>Shop the latest featured products added recently.</source>
+        <target>تسوق أحدث المنتجات المميزة التي تمت إضافتها مؤخرًا.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/special-products-section/special-products-section.component.html</context>
+          <context context-type="linenumber">6,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="uniqe-products.title" datatype="html">
+        <source>Featured products</source>
+        <target>المنتجات المميزة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/uniqe-products/uniqe-products.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="uniqe-products.subtitle" datatype="html">
+        <source>Shop the latest featured products added recently.</source>
+        <target>تسوق أحدث المنتجات المميزة التي تمت إضافتها مؤخرًا。</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/uniqe-products/uniqe-products.component.html</context>
+          <context context-type="linenumber">6,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="best-offers-section.offers" datatype="html">
+        <source>Best Discounts 2022</source>
+        <target>أفضل الخصومات 2022</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/best-offers-section/best-offers-section.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="best-offers-section.offers-des" datatype="html">
+        <source>Salla Store provides you with everything you need from electronics and home furniture in addition to the best discounts on products. Shop now and enjoy all the discounts on products.</source>
+        <target>متجر سلا يوفر لك كل ما تحتاجه من الإلكترونيات والأثاث المنزلي بالإضافة إلى أفضل الخصومات على المنتجات. تسوق الآن واستمتع بجميع الخصومات على المنتجات.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/best-offers-section/best-offers-section.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="show-more-btn" datatype="html">
+        <source>View More</source>
+        <target>عرض المزيد</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/best-offers-section/best-offers-section.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/hero/hero.component.html</context>
+          <context context-type="linenumber">30,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="show-all-btn" datatype="html">
+        <source> View all</source>
+        <target>عرض الكل</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/category-section/category-section.component.html</context>
+          <context context-type="linenumber">10,15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/special-products-section/special-products-section.component.html</context>
+          <context context-type="linenumber">10,15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/uniqe-products/uniqe-products.component.html</context>
+          <context context-type="linenumber">10,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="category.earphones" datatype="html">
+        <source>Earphones</source>
+        <target>سماعات الأذن</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/category-section/category-section.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/category-section/category-section.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="category.computer-screens" datatype="html">
+        <source>Computer screens</source>
+        <target>شاشات الكمبيوتر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/category-section/category-section.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="category.mobiles" datatype="html">
+        <source>Mobiles</source>
+        <target>الهواتف المحمولة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/category-section/category-section.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="category.digital-watches" datatype="html">
+        <source>Digital watches</source>
+        <target>الساعات الرقمية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/category-section/category-section.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="category.headphones" datatype="html">
+        <source>Headphones</source>
+        <target>سماعات الرأس</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/category-section/category-section.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="category.laptops" datatype="html">
+        <source>Laptops</source>
+        <target>أجهزة الكمبيوتر المحمولة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/category-section/category-section.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="shopping-now-btn" datatype="html">
+        <source>Shop now</source>
+        <target>تسوق الآن</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/feature-section/feature-section.component.html</context>
+          <context context-type="linenumber">26,28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cards/ads/ads.component.html</context>
+          <context context-type="linenumber">10,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="feature.guaranteed-product" datatype="html">
+        <source>Guaranteed products</source>
+        <target>منتجات مضمونة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/feature-section/feature-section.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="feature.guaranteed-product-des" datatype="html">
+        <source>Secure payments, installments up to 12 months</source>
+        <target>مدفوعات آمنة، أقساط تصل إلى 12 شهرًا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/feature-section/feature-section.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="feature.free-shipping" datatype="html">
+        <source>Free shipping</source>
+        <target>شحن مجاني</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/feature-section/feature-section.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="feature.free-shipping-des" datatype="html">
+        <source>Secure payments, installments up to 12 months</source>
+        <target>مدفوعات آمنة، أقساط تصل إلى 12 شهرًا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/feature-section/feature-section.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="feature.secure-payments" datatype="html">
+        <source>Secure payments</source>
+        <target>مدفوعات آمنة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/feature-section/feature-section.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="feature.secure-payments-des" datatype="html">
+        <source>Secure payments, installments up to 12 months</source>
+        <target>مدفوعات آمنة، أقساط تصل إلى 12 شهرًا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/feature-section/feature-section.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="feature.digital-headphones-product" datatype="html">
+        <source>Digital headphones</source>
+        <target>سماعات رقمية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/feature-section/feature-section.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/feature-section/feature-section.component.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="feature.product-des" datatype="html">
+        <source>The best pure sound</source>
+        <target>أفضل صوت نقي</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/feature-section/feature-section.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/feature-section/feature-section.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9037130244685953446" datatype="html">
+        <source>arrow-right</source>
+        <target>السهم لليمين</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/hero/hero.component.html</context>
+          <context context-type="linenumber">25,27</context>
+        </context-group>
+        <note priority="1" from="description">arrow-right</note>
+      </trans-unit>
+      <trans-unit id="hero-section.offers" datatype="html">
+        <source>Best Discounts 2022</source>
+        <target>أفضل الخصومات 2022</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/hero/hero.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hero-section.offers-des" datatype="html">
+        <source>Salla Store provides you with everything you need from electronics and home furniture in addition to the best discounts on products. Shop now and enjoy all the discounts on products.</source>
+        <target>متجر سلا يوفر لك كل ما تحتاجه من الإلكترونيات والأثاث المنزلي بالإضافة إلى أفضل الخصومات على المنتجات. تسوق الآن واستمتع بجميع الخصومات على المنتجات.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/hero/hero.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8547579576384696665" datatype="html">
+        <source>arrow-left</source>
+        <target>السهم لليسار</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Home-sections/hero/hero.component.html</context>
+          <context context-type="linenumber">33,36</context>
+        </context-group>
+        <note priority="1" from="description">arrow-left</note>
+      </trans-unit>
+      <trans-unit id="add-cart-btn" datatype="html">
+        <source><x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;svg
+          width=&quot;14&quot;
+          height=&quot;14&quot;
+          viewBox=&quot;0 0 22 21&quot;
+          fill=&quot;none&quot;
+          xmlns=&quot;http://www.w3.org/2000/svg&quot;
+        &gt;"/><x id="START_TAG__SVG_PATH" ctype="x-_svg_path" equiv-text="&lt;path
+            fill-rule=&quot;evenodd&quot;
+            clip-rule=&quot;evenodd&quot;
+            d=&quot;M4.31344 5.84579C4.29852 5.68077 4.31815 5.51445 4.37107 5.35742C4.42398 5.2004 4.50903 5.05613 4.62078 4.93379C4.73254 4.81145 4.86855 4.71374 5.02016 4.64687C5.17176 4.58 5.33564 4.54545 5.50133 4.54541H19.964C20.1427 4.54549 20.319 4.58567 20.48 4.66301C20.641 4.74034 20.7826 4.85285 20.8944 4.99222C21.0061 5.13159 21.0851 5.29428 21.1256 5.46827C21.166 5.64226 21.1669 5.82311 21.1281 5.99747L19.9061 11.5058C19.6959 12.4524 19.1691 13.299 18.4127 13.9057C17.6563 14.5124 16.7156 14.843 15.7459 14.8428H9.01901C7.95533 14.8429 6.93009 14.4451 6.14482 13.7276C5.35955 13.0101 4.87103 12.0249 4.7753 10.9655L4.31344 5.84579ZM6.06034 6.24971L6.47279 10.8121C6.53025 11.448 6.8236 12.0394 7.29513 12.4699C7.76665 12.9005 8.38221 13.139 9.02072 13.1385H15.7476C16.3293 13.1384 16.8935 12.9399 17.3471 12.5758C17.8008 12.2117 18.1167 11.7038 18.2427 11.1359L19.3283 6.24971H6.06034Z&quot;
+            fill=&quot;#1D1F1F&quot;
+          /&gt;"/><x id="CLOSE_TAG__SVG_PATH" ctype="x-_svg_path" equiv-text="&lt;path
+            fill-rule=&quot;evenodd&quot;
+            clip-rule=&quot;evenodd&quot;
+            d=&quot;M0.789062 1.68516C0.789062 1.45915 0.878842 1.24241 1.03865 1.0826C1.19846 0.922788 1.41521 0.833008 1.64121 0.833008H4.63056C4.839 0.833219 5.04014 0.909822 5.19591 1.04832C5.35169 1.18683 5.4513 1.37762 5.47589 1.5846L6.16102 7.38093C6.18746 7.60558 6.12358 7.83153 5.98343 8.00908C5.84328 8.18663 5.63833 8.30123 5.41368 8.32767C5.18904 8.35412 4.96309 8.29023 4.78554 8.15008C4.60799 8.00993 4.49339 7.80499 4.46695 7.58034L3.87214 2.53561H1.64121C1.41521 2.53561 1.19846 2.44582 1.03865 2.28602C0.878842 2.12621 0.789063 1.91116 0.789062 1.68516ZM8.45842 19.2957C8.68442 19.2957 8.90117 19.2059 9.06098 19.0461C9.22079 18.8863 9.31057 18.6696 9.31057 18.4436C9.31057 18.2176 9.22079 18.0008 9.06098 17.841C8.90117 17.6812 8.68442 17.5914 8.45842 17.5914C8.23242 17.5914 8.01567 17.6812 7.85586 17.841C7.69605 18.0008 7.60627 18.2176 7.60627 18.4436C7.60627 18.6696 7.69605 18.8863 7.85586 19.0461C8.01567 19.2059 8.23242 19.2957 8.45842 19.2957ZM8.45842 21C8.79414 21 9.12657 20.9339 9.43673 20.8054C9.74689 20.6769 10.0287 20.4886 10.2661 20.2512C10.5035 20.0138 10.6918 19.732 10.8203 19.4219C10.9487 19.1117 11.0149 18.7793 11.0149 18.4436C11.0149 18.1078 10.9487 17.7754 10.8203 17.4652C10.6918 17.1551 10.5035 16.8733 10.2661 16.6359C10.0287 16.3985 9.74689 16.2102 9.43673 16.0817C9.12657 15.9532 8.79414 15.8871 8.45842 15.8871C7.78041 15.8871 7.13016 16.1564 6.65073 16.6359C6.17131 17.1153 5.90197 17.7655 5.90197 18.4436C5.90197 19.1216 6.17131 19.7718 6.65073 20.2512C7.13016 20.7307 7.78041 21 8.45842 21ZM16.2334 19.2957C16.4594 19.2957 16.6762 19.2059 16.836 19.0461C16.9958 18.8863 17.0856 18.6696 17.0856 18.4436C17.0856 18.2176 16.9958 18.0008 16.836 17.841C16.6762 17.6812 16.4594 17.5914 16.2334 17.5914C16.0074 17.5914 15.7907 17.6812 15.6309 17.841C15.4711 18.0008 15.3813 18.2176 15.3813 18.4436C15.3813 18.6696 15.4711 18.8863 15.6309 19.0461C15.7907 19.2059 16.0074 19.2957 16.2334 19.2957ZM16.2334 21C16.5692 21 16.9016 20.9339 17.2118 20.8054C17.5219 20.6769 17.8037 20.4886 18.0411 20.2512C18.2785 20.0138 18.4668 19.732 18.5953 19.4219C18.7238 19.1117 18.7899 18.7793 18.7899 18.4436C18.7899 18.1078 18.7238 17.7754 18.5953 17.4652C18.4668 17.1551 18.2785 16.8733 18.0411 16.6359C17.8037 16.3985 17.5219 16.2102 17.2118 16.0817C16.9016 15.9532 16.5692 15.8871 16.2334 15.8871C15.5554 15.8871 14.9052 16.1564 14.4258 16.6359C13.9463 17.1153 13.677 17.7655 13.677 18.4436C13.677 19.1216 13.9463 19.7718 14.4258 20.2512C14.9052 20.7307 15.5554 21 16.2334 21Z&quot;
+            fill=&quot;#1D1F1F&quot;
+          /&gt;"/><x id="START_TAG__SVG_PATH_1" ctype="x-_svg_path_1" equiv-text="&lt;path
+            fill-rule=&quot;evenodd&quot;
+            clip-rule=&quot;evenodd&quot;
+            d=&quot;M0.789062 1.68516C0.789062 1.45915 0.878842 1.24241 1.03865 1.0826C1.19846 0.922788 1.41521 0.833008 1.64121 0.833008H4.63056C4.839 0.833219 5.04014 0.909822 5.19591 1.04832C5.35169 1.18683 5.4513 1.37762 5.47589 1.5846L6.16102 7.38093C6.18746 7.60558 6.12358 7.83153 5.98343 8.00908C5.84328 8.18663 5.63833 8.30123 5.41368 8.32767C5.18904 8.35412 4.96309 8.29023 4.78554 8.15008C4.60799 8.00993 4.49339 7.80499 4.46695 7.58034L3.87214 2.53561H1.64121C1.41521 2.53561 1.19846 2.44582 1.03865 2.28602C0.878842 2.12621 0.789063 1.91116 0.789062 1.68516ZM8.45842 19.2957C8.68442 19.2957 8.90117 19.2059 9.06098 19.0461C9.22079 18.8863 9.31057 18.6696 9.31057 18.4436C9.31057 18.2176 9.22079 18.0008 9.06098 17.841C8.90117 17.6812 8.68442 17.5914 8.45842 17.5914C8.23242 17.5914 8.01567 17.6812 7.85586 17.841C7.69605 18.0008 7.60627 18.2176 7.60627 18.4436C7.60627 18.6696 7.69605 18.8863 7.85586 19.0461C8.01567 19.2059 8.23242 19.2957 8.45842 19.2957ZM8.45842 21C8.79414 21 9.12657 20.9339 9.43673 20.8054C9.74689 20.6769 10.0287 20.4886 10.2661 20.2512C10.5035 20.0138 10.6918 19.732 10.8203 19.4219C10.9487 19.1117 11.0149 18.7793 11.0149 18.4436C11.0149 18.1078 10.9487 17.7754 10.8203 17.4652C10.6918 17.1551 10.5035 16.8733 10.2661 16.6359C10.0287 16.3985 9.74689 16.2102 9.43673 16.0817C9.12657 15.9532 8.79414 15.8871 8.45842 15.8871C7.78041 15.8871 7.13016 16.1564 6.65073 16.6359C6.17131 17.1153 5.90197 17.7655 5.90197 18.4436C5.90197 19.1216 6.17131 19.7718 6.65073 20.2512C7.13016 20.7307 7.78041 21 8.45842 21ZM16.2334 19.2957C16.4594 19.2957 16.6762 19.2059 16.836 19.0461C16.9958 18.8863 17.0856 18.6696 17.0856 18.4436C17.0856 18.2176 16.9958 18.0008 16.836 17.841C16.6762 17.6812 16.4594 17.5914 16.2334 17.5914C16.0074 17.5914 15.7907 17.6812 15.6309 17.841C15.4711 18.0008 15.3813 18.2176 15.3813 18.4436C15.3813 18.6696 15.4711 18.8863 15.6309 19.0461C15.7907 19.2059 16.0074 19.2957 16.2334 19.2957ZM16.2334 21C16.5692 21 16.9016 20.9339 17.2118 20.8054C17.5219 20.6769 17.8037 20.4886 18.0411 20.2512C18.2785 20.0138 18.4668 19.732 18.5953 19.4219C18.7238 19.1117 18.7899 18.7793 18.7899 18.4436C18.7899 18.1078 18.7238 17.7754 18.5953 17.4652C18.4668 17.1551 18.2785 16.8733 18.0411 16.6359C17.8037 16.3985 17.5219 16.2102 17.2118 16.0817C16.9016 15.9532 16.5692 15.8871 16.2334 15.8871C15.5554 15.8871 14.9052 16.1564 14.4258 16.6359C13.9463 17.1153 13.677 17.7655 13.677 18.4436C13.677 19.1216 13.9463 19.7718 14.4258 20.2512C14.9052 20.7307 15.5554 21 16.2334 21Z&quot;
+            fill=&quot;#1D1F1F&quot;
+          /&gt;"/><x id="CLOSE_TAG__SVG_PATH" ctype="x-_svg_path" equiv-text="&lt;path
+            fill-rule=&quot;evenodd&quot;
+            clip-rule=&quot;evenodd&quot;
+            d=&quot;M0.789062 1.68516C0.789062 1.45915 0.878842 1.24241 1.03865 1.0826C1.19846 0.922788 1.41521 0.833008 1.64121 0.833008H4.63056C4.839 0.833219 5.04014 0.909822 5.19591 1.04832C5.35169 1.18683 5.4513 1.37762 5.47589 1.5846L6.16102 7.38093C6.18746 7.60558 6.12358 7.83153 5.98343 8.00908C5.84328 8.18663 5.63833 8.30123 5.41368 8.32767C5.18904 8.35412 4.96309 8.29023 4.78554 8.15008C4.60799 8.00993 4.49339 7.80499 4.46695 7.58034L3.87214 2.53561H1.64121C1.41521 2.53561 1.19846 2.44582 1.03865 2.28602C0.878842 2.12621 0.789063 1.91116 0.789062 1.68516ZM8.45842 19.2957C8.68442 19.2957 8.90117 19.2059 9.06098 19.0461C9.22079 18.8863 9.31057 18.6696 9.31057 18.4436C9.31057 18.2176 9.22079 18.0008 9.06098 17.841C8.90117 17.6812 8.68442 17.5914 8.45842 17.5914C8.23242 17.5914 8.01567 17.6812 7.85586 17.841C7.69605 18.0008 7.60627 18.2176 7.60627 18.4436C7.60627 18.6696 7.69605 18.8863 7.85586 19.0461C8.01567 19.2059 8.23242 19.2957 8.45842 19.2957ZM8.45842 21C8.79414 21 9.12657 20.9339 9.43673 20.8054C9.74689 20.6769 10.0287 20.4886 10.2661 20.2512C10.5035 20.0138 10.6918 19.732 10.8203 19.4219C10.9487 19.1117 11.0149 18.7793 11.0149 18.4436C11.0149 18.1078 10.9487 17.7754 10.8203 17.4652C10.6918 17.1551 10.5035 16.8733 10.2661 16.6359C10.0287 16.3985 9.74689 16.2102 9.43673 16.0817C9.12657 15.9532 8.79414 15.8871 8.45842 15.8871C7.78041 15.8871 7.13016 16.1564 6.65073 16.6359C6.17131 17.1153 5.90197 17.7655 5.90197 18.4436C5.90197 19.1216 6.17131 19.7718 6.65073 20.2512C7.13016 20.7307 7.78041 21 8.45842 21ZM16.2334 19.2957C16.4594 19.2957 16.6762 19.2059 16.836 19.0461C16.9958 18.8863 17.0856 18.6696 17.0856 18.4436C17.0856 18.2176 16.9958 18.0008 16.836 17.841C16.6762 17.6812 16.4594 17.5914 16.2334 17.5914C16.0074 17.5914 15.7907 17.6812 15.6309 17.841C15.4711 18.0008 15.3813 18.2176 15.3813 18.4436C15.3813 18.6696 15.4711 18.8863 15.6309 19.0461C15.7907 19.2059 16.0074 19.2957 16.2334 19.2957ZM16.2334 21C16.5692 21 16.9016 20.9339 17.2118 20.8054C17.5219 20.6769 17.8037 20.4886 18.0411 20.2512C18.2785 20.0138 18.4668 19.732 18.5953 19.4219C18.7238 19.1117 18.7899 18.7793 18.7899 18.4436C18.7899 18.1078 18.7238 17.7754 18.5953 17.4652C18.4668 17.1551 18.2785 16.8733 18.0411 16.6359C17.8037 16.3985 17.5219 16.2102 17.2118 16.0817C16.9016 15.9532 16.5692 15.8871 16.2334 15.8871C15.5554 15.8871 14.9052 16.1564 14.4258 16.6359C13.9463 17.1153 13.677 17.7655 13.677 18.4436C13.677 19.1216 13.9463 19.7718 14.4258 20.2512C14.9052 20.7307 15.5554 21 16.2334 21Z&quot;
+            fill=&quot;#1D1F1F&quot;
+          /&gt;"/><x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;/svg&gt;"/> Add To Cart </source>
+        
+        <target><x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;svg
+          width=&quot;14&quot;
+          height=&quot;14&quot;
+          viewBox=&quot;0 0 22 21&quot;
+          fill=&quot;none&quot;
+          xmlns=&quot;http://www.w3.org/2000/svg&quot;
+        &gt;"/><x id="START_TAG__SVG_PATH" ctype="x-_svg_path" equiv-text="&lt;path
+            fill-rule=&quot;evenodd&quot;
+            clip-rule=&quot;evenodd&quot;
+            d=&quot;M4.31344 5.84579C4.29852 5.68077 4.31815 5.51445 4.37107 5.35742C4.42398 5.2004 4.50903 5.05613 4.62078 4.93379C4.73254 4.81145 4.86855 4.71374 5.02016 4.64687C5.17176 4.58 5.33564 4.54545 5.50133 4.54541H19.964C20.1427 4.54549 20.319 4.58567 20.48 4.66301C20.641 4.74034 20.7826 4.85285 20.8944 4.99222C21.0061 5.13159 21.0851 5.29428 21.1256 5.46827C21.166 5.64226 21.1669 5.82311 21.1281 5.99747L19.9061 11.5058C19.6959 12.4524 19.1691 13.299 18.4127 13.9057C17.6563 14.5124 16.7156 14.843 15.7459 14.8428H9.01901C7.95533 14.8429 6.93009 14.4451 6.14482 13.7276C5.35955 13.0101 4.87103 12.0249 4.7753 10.9655L4.31344 5.84579ZM6.06034 6.24971L6.47279 10.8121C6.53025 11.448 6.8236 12.0394 7.29513 12.4699C7.76665 12.9005 8.38221 13.139 9.02072 13.1385H15.7476C16.3293 13.1384 16.8935 12.9399 17.3471 12.5758C17.8008 12.2117 18.1167 11.7038 18.2427 11.1359L19.3283 6.24971H6.06034Z&quot;
+            fill=&quot;#1D1F1F&quot;
+          /&gt;"/><x id="CLOSE_TAG__SVG_PATH" ctype="x-_svg_path" equiv-text="&lt;path
+            fill-rule=&quot;evenodd&quot;
+            clip-rule=&quot;evenodd&quot;
+            d=&quot;M0.789062 1.68516C0.789062 1.45915 0.878842 1.24241 1.03865 1.0826C1.19846 0.922788 1.41521 0.833008 1.64121 0.833008H4.63056C4.839 0.833219 5.04014 0.909822 5.19591 1.04832C5.35169 1.18683 5.4513 1.37762 5.47589 1.5846L6.16102 7.38093C6.18746 7.60558 6.12358 7.83153 5.98343 8.00908C5.84328 8.18663 5.63833 8.30123 5.41368 8.32767C5.18904 8.35412 4.96309 8.29023 4.78554 8.15008C4.60799 8.00993 4.49339 7.80499 4.46695 7.58034L3.87214 2.53561H1.64121C1.41521 2.53561 1.19846 2.44582 1.03865 2.28602C0.878842 2.12621 0.789063 1.91116 0.789062 1.68516ZM8.45842 19.2957C8.68442 19.2957 8.90117 19.2059 9.06098 19.0461C9.22079 18.8863 9.31057 18.6696 9.31057 18.4436C9.31057 18.2176 9.22079 18.0008 9.06098 17.841C8.90117 17.6812 8.68442 17.5914 8.45842 17.5914C8.23242 17.5914 8.01567 17.6812 7.85586 17.841C7.69605 18.0008 7.60627 18.2176 7.60627 18.4436C7.60627 18.6696 7.69605 18.8863 7.85586 19.0461C8.01567 19.2059 8.23242 19.2957 8.45842 19.2957ZM8.45842 21C8.79414 21 9.12657 20.9339 9.43673 20.8054C9.74689 20.6769 10.0287 20.4886 10.2661 20.2512C10.5035 20.0138 10.6918 19.732 10.8203 19.4219C10.9487 19.1117 11.0149 18.7793 11.0149 18.4436C11.0149 18.1078 10.9487 17.7754 10.8203 17.4652C10.6918 17.1551 10.5035 16.8733 10.2661 16.6359C10.0287 16.3985 9.74689 16.2102 9.43673 16.0817C9.12657 15.9532 8.79414 15.8871 8.45842 15.8871C7.78041 15.8871 7.13016 16.1564 6.65073 16.6359C6.17131 17.1153 5.90197 17.7655 5.90197 18.4436C5.90197 19.1216 6.17131 19.7718 6.65073 20.2512C7.13016 20.7307 7.78041 21 8.45842 21ZM16.2334 19.2957C16.4594 19.2957 16.6762 19.2059 16.836 19.0461C16.9958 18.8863 17.0856 18.6696 17.0856 18.4436C17.0856 18.2176 16.9958 18.0008 16.836 17.841C16.6762 17.6812 16.4594 17.5914 16.2334 17.5914C16.0074 17.5914 15.7907 17.6812 15.6309 17.841C15.4711 18.0008 15.3813 18.2176 15.3813 18.4436C15.3813 18.6696 15.4711 18.8863 15.6309 19.0461C15.7907 19.2059 16.0074 19.2957 16.2334 19.2957ZM16.2334 21C16.5692 21 16.9016 20.9339 17.2118 20.8054C17.5219 20.6769 17.8037 20.4886 18.0411 20.2512C18.2785 20.0138 18.4668 19.732 18.5953 19.4219C18.7238 19.1117 18.7899 18.7793 18.7899 18.4436C18.7899 18.1078 18.7238 17.7754 18.5953 17.4652C18.4668 17.1551 18.2785 16.8733 18.0411 16.6359C17.8037 16.3985 17.5219 16.2102 17.2118 16.0817C16.9016 15.9532 16.5692 15.8871 16.2334 15.8871C15.5554 15.8871 14.9052 16.1564 14.4258 16.6359C13.9463 17.1153 13.677 17.7655 13.677 18.4436C13.677 19.1216 13.9463 19.7718 14.4258 20.2512C14.9052 20.7307 15.5554 21 16.2334 21Z&quot;
+            fill=&quot;#1D1F1F&quot;
+          /&gt;"/><x id="START_TAG__SVG_PATH_1" ctype="x-_svg_path_1" equiv-text="&lt;path
+            fill-rule=&quot;evenodd&quot;
+            clip-rule=&quot;evenodd&quot;
+            d=&quot;M0.789062 1.68516C0.789062 1.45915 0.878842 1.24241 1.03865 1.0826C1.19846 0.922788 1.41521 0.833008 1.64121 0.833008H4.63056C4.839 0.833219 5.04014 0.909822 5.19591 1.04832C5.35169 1.18683 5.4513 1.37762 5.47589 1.5846L6.16102 7.38093C6.18746 7.60558 6.12358 7.83153 5.98343 8.00908C5.84328 8.18663 5.63833 8.30123 5.41368 8.32767C5.18904 8.35412 4.96309 8.29023 4.78554 8.15008C4.60799 8.00993 4.49339 7.80499 4.46695 7.58034L3.87214 2.53561H1.64121C1.41521 2.53561 1.19846 2.44582 1.03865 2.28602C0.878842 2.12621 0.789063 1.91116 0.789062 1.68516ZM8.45842 19.2957C8.68442 19.2957 8.90117 19.2059 9.06098 19.0461C9.22079 18.8863 9.31057 18.6696 9.31057 18.4436C9.31057 18.2176 9.22079 18.0008 9.06098 17.841C8.90117 17.6812 8.68442 17.5914 8.45842 17.5914C8.23242 17.5914 8.01567 17.6812 7.85586 17.841C7.69605 18.0008 7.60627 18.2176 7.60627 18.4436C7.60627 18.6696 7.69605 18.8863 7.85586 19.0461C8.01567 19.2059 8.23242 19.2957 8.45842 19.2957ZM8.45842 21C8.79414 21 9.12657 20.9339 9.43673 20.8054C9.74689 20.6769 10.0287 20.4886 10.2661 20.2512C10.5035 20.0138 10.6918 19.732 10.8203 19.4219C10.9487 19.1117 11.0149 18.7793 11.0149 18.4436C11.0149 18.1078 10.9487 17.7754 10.8203 17.4652C10.6918 17.1551 10.5035 16.8733 10.2661 16.6359C10.0287 16.3985 9.74689 16.2102 9.43673 16.0817C9.12657 15.9532 8.79414 15.8871 8.45842 15.8871C7.78041 15.8871 7.13016 16.1564 6.65073 16.6359C6.17131 17.1153 5.90197 17.7655 5.90197 18.4436C5.90197 19.1216 6.17131 19.7718 6.65073 20.2512C7.13016 20.7307 7.78041 21 8.45842 21ZM16.2334 19.2957C16.4594 19.2957 16.6762 19.2059 16.836 19.0461C16.9958 18.8863 17.0856 18.6696 17.0856 18.4436C17.0856 18.2176 16.9958 18.0008 16.836 17.841C16.6762 17.6812 16.4594 17.5914 16.2334 17.5914C16.0074 17.5914 15.7907 17.6812 15.6309 17.841C15.4711 18.0008 15.3813 18.2176 15.3813 18.4436C15.3813 18.6696 15.4711 18.8863 15.6309 19.0461C15.7907 19.2059 16.0074 19.2957 16.2334 19.2957ZM16.2334 21C16.5692 21 16.9016 20.9339 17.2118 20.8054C17.5219 20.6769 17.8037 20.4886 18.0411 20.2512C18.2785 20.0138 18.4668 19.732 18.5953 19.4219C18.7238 19.1117 18.7899 18.7793 18.7899 18.4436C18.7899 18.1078 18.7238 17.7754 18.5953 17.4652C18.4668 17.1551 18.2785 16.8733 18.0411 16.6359C17.8037 16.3985 17.5219 16.2102 17.2118 16.0817C16.9016 15.9532 16.5692 15.8871 16.2334 15.8871C15.5554 15.8871 14.9052 16.1564 14.4258 16.6359C13.9463 17.1153 13.677 17.7655 13.677 18.4436C13.677 19.1216 13.9463 19.7718 14.4258 20.2512C14.9052 20.7307 15.5554 21 16.2334 21Z&quot;
+            fill=&quot;#1D1F1F&quot;
+          /&gt;"/><x id="CLOSE_TAG__SVG_PATH" ctype="x-_svg_path" equiv-text="&lt;path
+            fill-rule=&quot;evenodd&quot;
+            clip-rule=&quot;evenodd&quot;
+            d=&quot;M0.789062 1.68516C0.789062 1.45915 0.878842 1.24241 1.03865 1.0826C1.19846 0.922788 1.41521 0.833008 1.64121 0.833008H4.63056C4.839 0.833219 5.04014 0.909822 5.19591 1.04832C5.35169 1.18683 5.4513 1.37762 5.47589 1.5846L6.16102 7.38093C6.18746 7.60558 6.12358 7.83153 5.98343 8.00908C5.84328 8.18663 5.63833 8.30123 5.41368 8.32767C5.18904 8.35412 4.96309 8.29023 4.78554 8.15008C4.60799 8.00993 4.49339 7.80499 4.46695 7.58034L3.87214 2.53561H1.64121C1.41521 2.53561 1.19846 2.44582 1.03865 2.28602C0.878842 2.12621 0.789063 1.91116 0.789062 1.68516ZM8.45842 19.2957C8.68442 19.2957 8.90117 19.2059 9.06098 19.0461C9.22079 18.8863 9.31057 18.6696 9.31057 18.4436C9.31057 18.2176 9.22079 18.0008 9.06098 17.841C8.90117 17.6812 8.68442 17.5914 8.45842 17.5914C8.23242 17.5914 8.01567 17.6812 7.85586 17.841C7.69605 18.0008 7.60627 18.2176 7.60627 18.4436C7.60627 18.6696 7.69605 18.8863 7.85586 19.0461C8.01567 19.2059 8.23242 19.2957 8.45842 19.2957ZM8.45842 21C8.79414 21 9.12657 20.9339 9.43673 20.8054C9.74689 20.6769 10.0287 20.4886 10.2661 20.2512C10.5035 20.0138 10.6918 19.732 10.8203 19.4219C10.9487 19.1117 11.0149 18.7793 11.0149 18.4436C11.0149 18.1078 10.9487 17.7754 10.8203 17.4652C10.6918 17.1551 10.5035 16.8733 10.2661 16.6359C10.0287 16.3985 9.74689 16.2102 9.43673 16.0817C9.12657 15.9532 8.79414 15.8871 8.45842 15.8871C7.78041 15.8871 7.13016 16.1564 6.65073 16.6359C6.17131 17.1153 5.90197 17.7655 5.90197 18.4436C5.90197 19.1216 6.17131 19.7718 6.65073 20.2512C7.13016 20.7307 7.78041 21 8.45842 21ZM16.2334 19.2957C16.4594 19.2957 16.6762 19.2059 16.836 19.0461C16.9958 18.8863 17.0856 18.6696 17.0856 18.4436C17.0856 18.2176 16.9958 18.0008 16.836 17.841C16.6762 17.6812 16.4594 17.5914 16.2334 17.5914C16.0074 17.5914 15.7907 17.6812 15.6309 17.841C15.4711 18.0008 15.3813 18.2176 15.3813 18.4436C15.3813 18.6696 15.4711 18.8863 15.6309 19.0461C15.7907 19.2059 16.0074 19.2957 16.2334 19.2957ZM16.2334 21C16.5692 21 16.9016 20.9339 17.2118 20.8054C17.5219 20.6769 17.8037 20.4886 18.0411 20.2512C18.2785 20.0138 18.4668 19.732 18.5953 19.4219C18.7238 19.1117 18.7899 18.7793 18.7899 18.4436C18.7899 18.1078 18.7238 17.7754 18.5953 17.4652C18.4668 17.1551 18.2785 16.8733 18.0411 16.6359C17.8037 16.3985 17.5219 16.2102 17.2118 16.0817C16.9016 15.9532 16.5692 15.8871 16.2334 15.8871C15.5554 15.8871 14.9052 16.1564 14.4258 16.6359C13.9463 17.1153 13.677 17.7655 13.677 18.4436C13.677 19.1216 13.9463 19.7718 14.4258 20.2512C14.9052 20.7307 15.5554 21 16.2334 21Z&quot;
+            fill=&quot;#1D1F1F&quot;
+          /&gt;"/><x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;/svg&gt;"/>أضف للسلة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cards/product/product.component.html</context>
+          <context context-type="linenumber">29,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.about_store.title" datatype="html">
+        <source>About Our Store</source>
+        <target>عن متجرنا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.about_store.description" datatype="html">
+        <source>Salla Store is one of the best stores that sells entertainment products, games, gifts, and high-quality stationery. Shop now with confidence for the latest designs and exclusive items at the best prices, quality, and discounts.</source>
+        <target>متجر سلة هو أفضل المتاجر التي تقوم ببيع المنتجات الترفيهية والألعاب والهدايا والمكتبات عالية الجودة. تسوق الآن بثقة للحصول على أحدث التصاميم والمنتجات الحصرية بأفضل الأسعار والجودة والخصومات.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">8,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.my_account.title" datatype="html">
+        <source>My Account</source>
+        <target>حسابي</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.my_account.my_account_link" datatype="html">
+        <source>My Account</source>
+        <target>حسابي</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">20,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.my_account.my_orders_link" datatype="html">
+        <source>My Orders</source>
+        <target>طلباتي</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">24,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.my_account.order_history_link" datatype="html">
+        <source>Order History</source>
+        <target>سجل الطلبيات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">28,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.my_account.favorites_link" datatype="html">
+        <source>Favorites</source>
+        <target>المفضلة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">32,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.important_links.title" datatype="html">
+        <source>Important Links</source>
+        <target>روابط مهمة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">39,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.important_links.about_us_link" datatype="html">
+        <source>About Us</source>
+        <target>من نحن</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">43,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.important_links.privacy_policy_link" datatype="html">
+        <source>Privacy Policy</source>
+        <target>سياسة الخصوصية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">47,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.important_links.terms_conditions_link" datatype="html">
+        <source>Terms and Conditions</source>
+        <target>الشروط والأحكام</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">51,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.important_links.technical_support_link" datatype="html">
+        <source>Technical Support</source>
+        <target>الدعم الفني</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">55,60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.contact_us.title" datatype="html">
+        <source>Contact Us</source>
+        <target>تواصل معنا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">62,63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.contact_us.whatsapp_label" datatype="html">
+        <source>WhatsApp:</source>
+        <target>واتساب:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">67,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.contact_us.mobile_label" datatype="html">
+        <source>Mobile:</source>
+        <target>موبايل:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">74,76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.contact_us.email_label" datatype="html">
+        <source>Email:</source>
+        <target>البريد:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">81,83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.follow_us.title" datatype="html">
+        <source>Follow Us</source>
+        <target>تابعنا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">90,91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.follow_us.facebook_title" datatype="html">
+        <source>Facebook</source>
+        <target>فيسبوك</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">96,97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.follow_us.twitter_title" datatype="html">
+        <source>Twitter</source>
+        <target>تويتر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.follow_us.instagram_title" datatype="html">
+        <source>Instagram</source>
+        <target>إنستغرام</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">118,119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.follow_us.snapchat_title" datatype="html">
+        <source>Snapchat</source>
+        <target>سناب شات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">129,130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.bottom.copyright" datatype="html">
+        <source>All rights reserved to Salla Platform © 2023</source>
+        <target>جميع الحقوق محفوظة لمنصة سلة © 2023</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">146,149</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.bottom.vat_icon_alt" datatype="html">
+        <source>VAT Icon</source>
+        <target>أيقونة الضريبة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">153,154</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.bottom.tax_number" datatype="html">
+        <source>Tax Number: 546987552</source>
+        <target>الرقم الضريبي: 546987552</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">156,158</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.bottom.mada_payment_alt" datatype="html">
+        <source>Mada Payment</source>
+        <target>مدى للدفع</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">161,163</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.bottom.paypal_payment_alt" datatype="html">
+        <source>PayPal Payment</source>
+        <target>باي بال للدفع</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">167,169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.bottom.mastercard_payment_alt" datatype="html">
+        <source>Mastercard Payment</source>
+        <target>ماستركارد للدفع</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">173,175</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.bottom.visa_payment_alt" datatype="html">
+        <source>Visa Payment</source>
+        <target>فيزا للدفع</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">179,181</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="call-icon-alt" datatype="html">
+        <source>call-icon</source>
+        <target>call-icon</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="phone-number" datatype="html">
+        <source>+966556764472</source>
+        <target>+966556764472</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email-icon-alt" datatype="html">
+        <source>email-icon</source>
+        <target>email-icon</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email-address" datatype="html">
+        <source>Supportsaella.sa</source>
+        <target>Support@saella.sa</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">15,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang-icon-alt" datatype="html">
+        <source>lang-icon</source>
+        <target>lang-icon</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="language-currency" datatype="html">
+        <source>Arabic - SAR</source>
+        <target>العربية - رس</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">23,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="favorites" datatype="html">
+        <source>Favorites</source>
+        <target>المفضلة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="return-policy" datatype="html">
+        <source>Return or Exchange Policy</source>
+        <target>سياسة الإستبدال أو الاسترجاع</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">28,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact-us" datatype="html">
+        <source>Contact Us</source>
+        <target>تواصل معنا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">30,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="logo-icon-alt" datatype="html">
+        <source>Logo</source>
+        <target>Logo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="search-placeholder" datatype="html">
+        <source>Search for what you want</source>
+        <target>ابحث عما تريد</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">51,52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="search-icon-alt" datatype="html">
+        <source>search-icon</source>
+        <target>search-icon</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">56,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user-icon-alt" datatype="html">
+        <source>user-icon</source>
+        <target>user-icon</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">67,69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="welcome-message" datatype="html">
+        <source>Welcome</source>
+        <target>مرحبا بك</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">70,71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login-label" datatype="html">
+        <source>Login</source>
+        <target>تسجيل دخول</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">72,73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="arrow-icon-alt" datatype="html">
+        <source>arrow-icon</source>
+        <target>arrow-icon</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">73,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cart-icon-alt" datatype="html">
+        <source>cart-icon</source>
+        <target>cart-icon</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">82,83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cart-label" datatype="html">
+        <source>Shopping Cart</source>
+        <target>سلة المشتريات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">86,87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="all-categories" datatype="html">
+        <source>All Categories</source>
+        <target>كل الفئات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">102,103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dropdown-icon-alt" datatype="html">
+        <source>dropdown-icon</source>
+        <target>dropdown-icon</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">103,106</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">109,112</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">115,118</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">121,124</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">127,130</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">133,136</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">139,142</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">145,148</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">151,154</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">157,160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="electronics" datatype="html">
+        <source>Electronics</source>
+        <target>الإلكترونيات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">108,109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessories" datatype="html">
+        <source>Accessories</source>
+        <target>مواليات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">114,115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="external-cables" datatype="html">
+        <source>External Cables</source>
+        <target>كابلات خارجية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">120,121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="computer-monitors" datatype="html">
+        <source>Computer Monitors</source>
+        <target>شاشات كمبيوتر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">126,127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accessories-nav" datatype="html">
+        <source>Accessories</source>
+        <target>الاكسسوارات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">132,133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="electric-amplifiers" datatype="html">
+        <source>Electric Amplifiers</source>
+        <target>مكبرات برقية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">138,139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="electric-amplifiers-duplicate" datatype="html">
+        <source>Electric Amplifiers</source>
+        <target>مكبرات برقية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">144,145</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="electronics-nav" datatype="html">
+        <source>Electronics</source>
+        <target>الكترونيات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">150,151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="headphones" datatype="html">
+        <source>Headphones</source>
+        <target>سماعات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">156,157</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2989538405035420938" datatype="html">
+        <source>SAR</source>
+        <target>رس</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4920600229396298469" datatype="html">
+        <source>رس</source>
+        <target>رس</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="main_link" datatype="html">
+        <source>Home</source>
+        <target>الرئيسية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/route-back/route-back.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login-title" datatype="html">
+        <source>Do you have an account? Log in</source>
+        <target>لديك حساب؟ سجل الدخول</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Login/Login.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login-subtitle" datatype="html">
+        <source>Log in to track your orders and easily access your <x id="LINE_BREAK" ctype="lb" equiv-text="<br>"/>favorites list</source>
+        <target>قم بتسجيل الدخول حتى تتبع طلباتك وتصل بسهولة إلى<x id="LINE_BREAK" ctype="lb" equiv-text="<br>"/>قائمة مفضلاتك.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Login/Login.component.html</context>
+          <context context-type="linenumber">10,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email-label" datatype="html">
+        <source>Email</source>
+        <target>البريد الإلكتروني</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Login/Login.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Register/Register.component.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email-placeholder" datatype="html">
+        <source>Enter your email</source>
+        <target>أدخل بريدك الإلكتروني</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Login/Login.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Register/Register.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email-input-alt" datatype="html">
+        <source>Email input icon</source>
+        <target>email-input-icon</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Login/Login.component.html</context>
+          <context context-type="linenumber">34,37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Register/Register.component.html</context>
+          <context context-type="linenumber">32,34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Register/Register.component.html</context>
+          <context context-type="linenumber">51,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="password-label" datatype="html">
+        <source>Password</source>
+        <target>كلمة المرور</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Login/Login.component.html</context>
+          <context context-type="linenumber">38,40</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Register/Register.component.html</context>
+          <context context-type="linenumber">55,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="password-placeholder" datatype="html">
+        <source>Enter your password</source>
+        <target>أدخل كلمة المرور الخاصة بك</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Login/Login.component.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Register/Register.component.html</context>
+          <context context-type="linenumber">62,63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="password-input-alt" datatype="html">
+        <source>Password input icon</source>
+        <target>password-input-icon</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Login/Login.component.html</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Register/Register.component.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Register/Register.component.html</context>
+          <context context-type="linenumber">94,95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="password-eye-alt" datatype="html">
+        <source>Password visibility toggle icon</source>
+        <target>password-eye-icon</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Login/Login.component.html</context>
+          <context context-type="linenumber">58,59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Register/Register.component.html</context>
+          <context context-type="linenumber">75,76</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Register/Register.component.html</context>
+          <context context-type="linenumber">100,101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="forgot-password" datatype="html">
+        <source>Forgot password?</source>
+        <target>هل نسيت كلمة المرور؟</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Login/Login.component.html</context>
+          <context context-type="linenumber">63,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="remember-me" datatype="html">
+        <source>Remember me</source>
+        <target>تذكرني</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Login/Login.component.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login-button" datatype="html">
+        <source>Log in</source>
+        <target>تسجيل الدخول</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Login/Login.component.html</context>
+          <context context-type="linenumber">71,73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="create-account" datatype="html">
+        <source>Create new account</source>
+        <target>إنشاء حساب جديد</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Login/Login.component.html</context>
+          <context context-type="linenumber">74,76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login-illustrator-alt" datatype="html">
+        <source>Login illustration</source>
+        <target>login-illustration</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Login/Login.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2454050363478003966" datatype="html">
+        <source>Login</source>
+        <target>تسجيل الدخول</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Login/Login.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register-title" datatype="html">
+        <source>New with us? Register now</source>
+        <target>جديد معنا؟ سجل الآن</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Register/Register.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register-subtitle" datatype="html">
+        <source>Registering on this site allows you to access your order status and history. Simply fill out the fields below, and we'll create a new account for you as soon as possible.</source>
+        <target>يتيح لك التسجيل في هذا الموقع الوصول إلى حالة طلبك وسجله. ما عليك سوى ملء الحقول أدناه ، وسنقوم بإنشاء حساب جديد لك في أسرع وقت.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Register/Register.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="name-label" datatype="html">
+        <source>Name</source>
+        <target>الاسم</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Register/Register.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="name-placeholder" datatype="html">
+        <source>First Name</source>
+        <target>الاسم الأول</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Register/Register.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="confirmPassword-label" datatype="html">
+        <source>Confirm password</source>
+        <target>تأكيد كلمة المرور</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Register/Register.component.html</context>
+          <context context-type="linenumber">80,82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="confirmPassword-placeholder" datatype="html">
+        <source>Enter your confirm password</source>
+        <target>أدخل تأكيد كلمة المرور الخاصة بك</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Register/Register.component.html</context>
+          <context context-type="linenumber">87,88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register-button" datatype="html">
+        <source>Create account</source>
+        <target>إنشاء حساب</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Register/Register.component.html</context>
+          <context context-type="linenumber">104,106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login-account" datatype="html">
+        <source>Login</source>
+        <target>تسجيل الدخول</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Register/Register.component.html</context>
+          <context context-type="linenumber">107,109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register-illustrator-alt" datatype="html">
+        <source>register illustration</source>
+        <target>register-illustration</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Register/Register.component.html</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3301086086650990787" datatype="html">
+        <source>Register</source>
+        <target>تسجيل</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Register/Register.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+
+    </body>
+  </file>
+</xliff>

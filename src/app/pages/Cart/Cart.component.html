@@ -1,0 +1,102 @@
+<div class="container">
+  <app-route-back></app-route-back>
+</div>
+<section class="cart-section">
+  <div class="container">
+    <div class="cart-content">
+      <!-- Cart Items -->
+      <div class="cart-items">
+        <div class="cart-item" *ngFor="let item of cartItems">
+          <div class="item-image">
+            <img [src]="item.product.thumbnail" [alt]="item.product.title" />
+          </div>
+
+          <div class="item-details">
+            <h3 class="item-name">{{ item.product.title }}</h3>
+            <p class="item-price">{{ item.product.price|currency }}</p>
+          </div>
+
+          <div class="quantity-controls">
+            <button
+              class="qty-btn"
+              (click)="incrementQuantity(item)"
+              [attr.aria-label]="'Increase quantity'"
+              i18n-aria-label="@@cart.increase-quantity"
+            >
+              +
+            </button>
+            <hr>
+            <span class="quantity">{{ item.quantity }}</span>
+            <hr>
+            <button
+              class="qty-btn"
+              (click)="decrementQuantity(item)"
+              [attr.aria-label]="'Decrease quantity'"
+              i18n-aria-label="@@cart.decrease-quantity"
+            >
+              -
+            </button>
+          </div>
+
+          <div class="total-price">
+            <h2>50,000 ر.س</h2>
+          </div>
+
+          <button
+            class="remove-btn"
+            (click)="removeItem(item.product.id)"
+            [attr.aria-label]="'Remove item'"
+            i18n-aria-label="@@cart.remove-item"
+          >
+            ×
+          </button>
+        </div>
+      </div>
+
+      <!-- Order Summary -->
+      <div class="order-summary">
+        <h2 class="summary-title" i18n="@@cart.order-summary">
+          Order Summary
+        </h2>
+
+        <div class="summary-row">
+          <span i18n="@@cart.product-total">Product Total</span>
+          <span>{{ totalItems }}</span>
+        </div>
+
+        <div class="summary-row">
+          <span i18n="@@cart.do-you-have-discount"
+            >Do you have a discount code</span>
+        
+        </div>
+
+        <div class="discount-section">
+          <input
+            type="text"
+            [placeholder]="'Enter discount code'"
+            i18n-placeholder="@@cart.discount-placeholder"
+            class="custom-input"
+          />
+          <button class="discount-btn" i18n="@@cart.add-discount">Add</button>
+        </div>
+
+        <hr class="seprate-line" />
+        <div class="summary-row-total">
+          <span i18n="@@cart.delivery">Delivery</span>
+          <span
+            >{{ cartTotal }}
+            <span i18n="@@cart.delivery-unit">SAR</span></span
+          >
+        </div>
+
+        <div class="summary-row shipping-info">
+          <span i18n="@@cart.shipping-tax-included">Free shipping included with tax <span>*</span></span>
+        </div>
+
+        <button class="checkout-btn" (click)="proceedToCheckout()" i18n="@@cart.complete-order">
+          Complete Order
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

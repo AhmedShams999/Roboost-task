@@ -1,0 +1,20 @@
+.special-products-section{
+  position: relative;
+  min-height: 60vh;
+  padding: 50px 0;
+}
+
+
+.special-products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .special-products-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}

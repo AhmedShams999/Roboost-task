@@ -1,0 +1,9 @@
+<section class="ads-section">
+  <div class="container">
+    <div class="ads-container">
+      @for (item of adsData; track $index) {
+        <app-ads [adsData]="item"></app-ads>
+      }
+    </div>
+  </div>
+</section>

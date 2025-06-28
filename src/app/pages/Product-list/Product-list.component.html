@@ -1,0 +1,389 @@
+<!-- <div class="product-list-container">
+  <h1>Products</h1>
+
+  <div class="controls">
+    <input
+      type="text"
+      placeholder="Search products..."
+      [value]="searchQuery"
+   
+    />
+
+    <select >
+      <option value="">All Categories</option>
+      <option *ngFor="let category of categories$ | async" [value]="category" [selected]="category === selectedCategory">
+        {{ category }}
+      </option>
+    </select>
+  </div>
+
+
+  <div *ngIf="isLoading()">Loading products...</div>
+  <div *ngIf="errorMessage()" style="color: red;">{{ errorMessage() }}</div>
+
+
+  <div class="product-grid">
+    <div *ngFor="let product of products$ " class="product-card">
+      <img [src]="product.thumbnail" alt="{{ product.title }}" />
+      <h3>{{ product.title }}</h3>
+      <p>{{ product.description }}</p>
+      <p>Price: ${{ product.price }}</p>
+      <p>Rating: {{ product.rating }}</p>
+      <p>Category: {{ product.category }}</p>
+    </div>
+  </div>
+
+  <button *ngIf="hasMoreProducts() && !isLoading()" (click)="onLoadMore()">
+    Load More ({{ totalProducts() - products$.length }} remaining)
+  </button>
+  <div *ngIf="!hasMoreProducts() && !isLoading()">
+    All products loaded.
+  </div>
+</div> -->
+
+<div class="container">
+  <app-route-back [routesBack]="routeBack"></app-route-back>
+</div>
+<section class="product-list-section">
+  <div class="container">
+    <div class="mobile-filter-toggle" (click)="toggleMobileFilters()">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2.5 5.83333H17.5M5.83333 10H14.1667M8.33333 14.1667H11.6667"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
+      </svg>
+      <span>Filters</span>
+      <span class="filter-count" *ngIf="getActiveFiltersCount() > 0"
+        >({{ getActiveFiltersCount() }})</span
+      >
+    </div>
+
+    <div
+      class="filter-overlay"
+      [class.active]="showMobileFilters"
+      (click)="closeMobileFilters()"
+    ></div>
+
+    <div class="filter-container" [class.mobile-active]="showMobileFilters">
+      <div class="mobile-filter-header">
+        <h3>Filters</h3>
+        <div class="mobile-filter-actions">
+          <button
+            class="clear-all-btn"
+            (click)="clearAllFilters()"
+            *ngIf="getActiveFiltersCount() > 0"
+          >
+            Clear All
+          </button>
+          <button class="close-filters-btn" (click)="closeMobileFilters()">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 6L6 18M6 6L18 18"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="search-input-container">
+        <input
+          type="text"
+          placeholder="Search products..."
+          [(ngModel)]="searchQuery"
+          (input)="onSearchInput($event)"
+          class="custom-input"
+          i18n-placeholder="@@products-list.searchProducts-placeholder"
+        />
+      </div>
+
+      <div class="line-sperate"><hr /></div>
+
+      <div class="filter-section">
+        <div class="section-header" (click)="toggleSection('category')">
+          <h3>{{ sections.category.title }}</h3>
+          <span
+            class="toggle-icon"
+            [class.expanded]="sections.category.expanded"
+          >
+            <svg
+              width="24"
+              height="34"
+              viewBox="0 0 14 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.32031 18.1582L3.5 17.3379L7 13.8379L10.5 17.3379L9.67969 18.1582L7 15.4785L4.32031 18.1582Z"
+                fill="#62D0B6"
+              />
+            </svg>
+          </span>
+        </div>
+        <div
+          class="section-content"
+          [class.expanded]="sections.category.expanded"
+        >
+          <div
+            class="filter-option"
+            *ngFor="let option of sections.category.options"
+          >
+            <label class="checkbox-label">
+              <input
+                type="checkbox"
+                [(ngModel)]="option.checked"
+                (change)="onFilterChange('category', option)"
+              />
+              <span class="checkmark"></span>
+              <span class="option-text">{{ option.name }}</span>
+              <span class="count" *ngIf="option.count > 0"
+                >({{ option.count }})</span
+              >
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="line-sperate"><hr /></div>
+
+      <div class="filter-section">
+        <div class="section-header" (click)="toggleSection('brand')">
+          <h3>{{ sections.brand.title }}</h3>
+          <span class="toggle-icon" [class.expanded]="sections.brand.expanded">
+            <svg
+              width="24"
+              height="34"
+              viewBox="0 0 14 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.32031 18.1582L3.5 17.3379L7 13.8379L10.5 17.3379L9.67969 18.1582L7 15.4785L4.32031 18.1582Z"
+                fill="#62D0B6"
+              />
+            </svg>
+          </span>
+        </div>
+        <div class="section-content" [class.expanded]="sections.brand.expanded">
+          <div
+            class="filter-option"
+            *ngFor="let option of sections.brand.options"
+          >
+            <label class="checkbox-label">
+              <input
+                type="checkbox"
+                [(ngModel)]="option.checked"
+                (change)="onFilterChange('brand', option)"
+              />
+              <span class="checkmark"></span>
+              <span class="option-text">{{ option.name }}</span>
+              <span class="count" *ngIf="option.count > 0"
+                >({{ option.count }})</span
+              >
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="line-sperate"><hr /></div>
+
+      <div class="filter-section">
+        <div class="section-header" (click)="toggleSection('price')">
+          <h3>{{ sections.price.title }}</h3>
+          <span class="toggle-icon" [class.expanded]="sections.price.expanded">
+            <svg
+              width="24"
+              height="34"
+              viewBox="0 0 14 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.32031 18.1582L3.5 17.3379L7 13.8379L10.5 17.3379L9.67969 18.1582L7 15.4785L4.32031 18.1582Z"
+                fill="#62D0B6"
+              />
+            </svg>
+          </span>
+        </div>
+        <div
+          class="section-content price-section"
+          [class.expanded]="sections.price.expanded"
+        >
+          <div class="price-range-container">
+            <div class="slider-container">
+              <div class="slider-track"></div>
+              <div
+                class="slider-range"
+                [style.right.%]="getMinPercent()"
+                [style.left.%]="getMaxPercent()"
+              ></div>
+              <input
+                type="range"
+                class="slider thumb-min"
+                [min]="priceRange.min"
+                [max]="priceRange.max"
+                [(ngModel)]="selectedPriceRange.min"
+                (input)="onPriceRangeChange()"
+              />
+              <input
+                type="range"
+                class="slider thumb-max"
+                [min]="priceRange.min"
+                [max]="priceRange.max"
+                [(ngModel)]="selectedPriceRange.max"
+                (input)="onPriceRangeChange()"
+              />
+            </div>
+          </div>
+          <div class="price-labels">
+            <span class="price-label" i18n="@@products-list.from">From</span>
+            <span class="price-label" i18n="@@products-list.to">To</span>
+          </div>
+          <div class="price-values">
+            <span class="price-value">{{ selectedPriceRange.min.toLocaleString() }} <span i18n="@@2989538405035420938">SAR</span> </span>
+            <span class="price-value">{{ selectedPriceRange.max.toLocaleString() }} <span i18n="@@2989538405035420938">SAR</span> </span>
+          </div>
+        </div>
+      </div>
+      <div class="line-sperate"><hr /></div>
+
+      <div class="filter-section">
+        <div class="section-header" (click)="toggleSection('rating')">
+          <h3>{{ sections.rating.title }}</h3>
+          <span class="toggle-icon" [class.expanded]="sections.rating.expanded">
+               <svg
+              width="24"
+              height="34"
+              viewBox="0 0 14 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.32031 18.1582L3.5 17.3379L7 13.8379L10.5 17.3379L9.67969 18.1582L7 15.4785L4.32031 18.1582Z"
+                fill="#62D0B6"
+              />
+            </svg>
+          </span>
+        </div>
+        <div
+          class="section-content"
+          [class.expanded]="sections.rating.expanded"
+        >
+          <div
+            class="filter-option"
+            *ngFor="let option of sections.rating.options"
+          >
+            <label class="checkbox-label rating-label">
+              <input
+                type="checkbox"
+                [(ngModel)]="option.checked"
+                (change)="onFilterChange('rating', option)"
+              />
+              <span class="checkmark"></span>
+              <div class="rating-content">
+                <div class="stars">
+                  <span
+                    *ngFor="let star of option.stars"
+                    class="star"
+                    [class.filled]="star.filled"
+                    [class.empty]="!star.filled"
+                    >★</span
+                  >
+                </div>
+                <span class="count" *ngIf="option.count > 0"
+                  >({{ option.count }})</span
+                >
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="products-part">
+      <div class="preview-order-sec">
+        <div class="show-style-container">
+          <div class="show-style active">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 7.00012C1.60444 7.00012 1.21776 7.11742 0.888861 7.33718C0.559963 7.55695 0.303617 7.8693 0.152242 8.23476C0.000866562 8.60021 -0.0387401 9.00234 0.0384303 9.3903C0.115601 9.77827 0.306082 10.1346 0.585787 10.4143C0.865492 10.694 1.22186 10.8845 1.60982 10.9617C1.99778 11.0389 2.39992 10.9993 2.76537 10.8479C3.13082 10.6965 3.44318 10.4402 3.66294 10.1113C3.8827 9.78236 4 9.39569 4 9.00012C4 8.46969 3.78929 7.96098 3.41421 7.58591C3.03914 7.21084 2.53043 7.00012 2 7.00012ZM2 14.0001C1.60444 14.0001 1.21776 14.1174 0.888861 14.3372C0.559963 14.5569 0.303617 14.8693 0.152242 15.2348C0.000866562 15.6002 -0.0387401 16.0023 0.0384303 16.3903C0.115601 16.7783 0.306082 17.1346 0.585787 17.4143C0.865492 17.694 1.22186 17.8845 1.60982 17.9617C1.99778 18.0389 2.39992 17.9993 2.76537 17.8479C3.13082 17.6965 3.44318 17.4402 3.66294 17.1113C3.8827 16.7824 4 16.3957 4 16.0001C4 15.4697 3.78929 14.961 3.41421 14.5859C3.03914 14.2108 2.53043 14.0001 2 14.0001ZM9 4.00012C9.39556 4.00012 9.78224 3.88282 10.1111 3.66306C10.44 3.4433 10.6964 3.13094 10.8478 2.76549C10.9991 2.40004 11.0387 1.9979 10.9616 1.60994C10.8844 1.22198 10.6939 0.865614 10.4142 0.585909C10.1345 0.306204 9.77814 0.115723 9.39018 0.0385524C9.00222 -0.038618 8.60009 0.000988632 8.23463 0.152364C7.86918 0.303739 7.55682 0.560084 7.33706 0.888982C7.1173 1.21788 7 1.60456 7 2.00012C7 2.53056 7.21071 3.03926 7.58579 3.41434C7.96086 3.78941 8.46957 4.00012 9 4.00012ZM2 0.00012291C1.60444 0.00012291 1.21776 0.117421 0.888861 0.337184C0.559963 0.556946 0.303617 0.869304 0.152242 1.23476C0.000866562 1.60021 -0.0387401 2.00234 0.0384303 2.3903C0.115601 2.77827 0.306082 3.13463 0.585787 3.41434C0.865492 3.69404 1.22186 3.88452 1.60982 3.96169C1.99778 4.03886 2.39992 3.99926 2.76537 3.84788C3.13082 3.69651 3.44318 3.44016 3.66294 3.11126C3.8827 2.78236 4 2.39569 4 2.00012C4 1.46969 3.78929 0.960982 3.41421 0.585909C3.03914 0.210836 2.53043 0.00012291 2 0.00012291ZM9 14.0001C8.60444 14.0001 8.21776 14.1174 7.88886 14.3372C7.55996 14.5569 7.30362 14.8693 7.15224 15.2348C7.00087 15.6002 6.96126 16.0023 7.03843 16.3903C7.1156 16.7783 7.30608 17.1346 7.58579 17.4143C7.86549 17.694 8.22186 17.8845 8.60982 17.9617C8.99778 18.0389 9.39992 17.9993 9.76537 17.8479C10.1308 17.6965 10.4432 17.4402 10.6629 17.1113C10.8827 16.7824 11 16.3957 11 16.0001C11 15.4697 10.7893 14.961 10.4142 14.5859C10.0391 14.2108 9.53043 14.0001 9 14.0001ZM9 7.00012C8.60444 7.00012 8.21776 7.11742 7.88886 7.33718C7.55996 7.55695 7.30362 7.8693 7.15224 8.23476C7.00087 8.60021 6.96126 9.00234 7.03843 9.3903C7.1156 9.77827 7.30608 10.1346 7.58579 10.4143C7.86549 10.694 8.22186 10.8845 8.60982 10.9617C8.99778 11.0389 9.39992 10.9993 9.76537 10.8479C10.1308 10.6965 10.4432 10.4402 10.6629 10.1113C10.8827 9.78236 11 9.39569 11 9.00012C11 8.46969 10.7893 7.96098 10.4142 7.58591C10.0391 7.21084 9.53043 7.00012 9 7.00012Z"
+                fill="#A5A5A5"
+              />
+              <path
+                d="M16 4.00012C16.3956 4.00012 16.7822 3.88282 17.1111 3.66306C17.44 3.4433 17.6964 3.13094 17.8478 2.76549C17.9991 2.40004 18.0387 1.9979 17.9616 1.60994C17.8844 1.22198 17.6939 0.865614 17.4142 0.585909C17.1345 0.306204 16.7781 0.115723 16.3902 0.0385524C16.0022 -0.038618 15.6001 0.000988632 15.2346 0.152364C14.8692 0.303739 14.5568 0.560084 14.3371 0.888982C14.1173 1.21788 14 1.60456 14 2.00012C14 2.53056 14.2107 3.03926 14.5858 3.41434C14.9609 3.78941 15.4696 4.00012 16 4.00012ZM16 14.0001C15.6044 14.0001 15.2178 14.1174 14.8889 14.3372C14.56 14.5569 14.3036 14.8693 14.1522 15.2348C14.0009 15.6002 13.9613 16.0023 14.0384 16.3903C14.1156 16.7783 14.3061 17.1346 14.5858 17.4143C14.8655 17.694 15.2219 17.8845 15.6098 17.9617C15.9978 18.0389 16.3999 17.9993 16.7654 17.8479C17.1308 17.6965 17.4432 17.4402 17.6629 17.1113C17.8827 16.7824 18 16.3957 18 16.0001C18 15.4697 17.7893 14.961 17.4142 14.5859C17.0391 14.2108 16.5304 14.0001 16 14.0001ZM16 7.00012C15.6044 7.00012 15.2178 7.11742 14.8889 7.33718C14.56 7.55695 14.3036 7.8693 14.1522 8.23476C14.0009 8.60021 13.9613 9.00234 14.0384 9.3903C14.1156 9.77827 14.3061 10.1346 14.5858 10.4143C14.8655 10.694 15.2219 10.8845 15.6098 10.9617C15.9978 18.0389 16.3999 17.9993 16.7654 17.8479C17.1308 17.6965 17.4432 17.4402 17.6629 17.1113C17.8827 9.78236 18 9.39569 18 9.00012C18 8.46969 17.7893 7.96098 17.4142 7.58591C17.0391 7.21084 16.5304 7.00012 16 7.00012Z"
+                fill="#A5A5A5"
+              />
+            </svg>
+          </div>
+
+          <div class="show-style">
+            <svg
+              width="20"
+              height="16"
+              viewBox="0 0 20 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.8889 2.28584C18.2752 2.28584 17.7778 1.77416 17.7778 1.14298C17.7778 0.511802 18.2752 0.00012207 18.8889 0.00012207C19.5025 0.00012207 20 0.511802 20 1.14298C20 1.77416 19.5025 2.28584 18.8889 2.28584ZM18.8889 9.14298C18.2752 9.14298 17.7778 8.63132 17.7778 8.00012C17.7778 7.36892 18.2752 6.85727 18.8889 6.85727C19.5025 6.85727 20 7.36892 20 8.00012C20 8.63132 19.5025 9.14298 18.8889 9.14298ZM17.7778 14.8573C17.7778 15.4885 18.2752 16.0001 18.8889 16.0001C19.5025 16.0001 20 15.4885 20 14.8573C20 14.2261 19.5025 13.7144 18.8889 13.7144C18.2752 13.7144 17.7778 14.2261 17.7778 14.8573ZM14.4444 0.00012207C15.0581 0.00012207 15.5556 0.511802 15.5556 1.14298C15.5556 1.77416 15.0581 2.28584 14.4444 2.28584H1.11111C0.497444 2.28584 0 1.77416 0 1.14298C0 0.511802 0.497444 0.00012207 1.11111 0.00012207H14.4444ZM15.5556 8.00012C15.5556 7.36892 15.0581 6.85727 14.4444 6.85727H1.11111C0.497444 6.85727 0 7.36892 0 8.00012C0 8.63132 0.497444 9.14298 1.11111 9.14298H14.4444C15.0581 9.14298 15.5556 8.63132 15.5556 8.00012ZM14.4444 13.7144C15.0581 13.7144 15.5556 14.2261 15.5556 14.8573C15.5556 15.4885 15.0581 16.0001 14.4444 16.0001H1.11111C0.497444 16.0001 0 15.4885 0 14.8573C0 14.2261 0.497444 13.7144 1.11111 13.7144H14.4444Z"
+                fill="#A5A5A5"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="order-container">
+          <p i18n="@@product-list.sorting"><span>Sort by: </span>High to Low</p>
+          <svg
+            width="10"
+            height="6"
+            viewBox="0 0 10 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.5 1.01941C0.5 0.887026 0.550962 0.754643 0.652887 0.652811C0.856738 0.449145 1.1829 0.449145 1.38675 0.652811L5.0051 4.26788L8.61325 0.652811C8.8171 0.449145 9.14326 0.449145 9.34711 0.652811C9.55096 0.856476 9.55096 1.18234 9.34711 1.38601L5.38222 5.34731C5.29049 5.43896 5.15798 5.50006 5.01529 5.50006C4.88279 5.50006 4.71971 5.44914 4.62797 5.34731L0.652887 1.38601C0.550962 1.28418 0.5 1.15179 0.5 1.01941Z"
+              fill="#666666"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="products-show-list">
+        @if(isLoading()){
+            <app-loading [dotColor]="'#62D0B6'"></app-loading>
+        }@else {
+          @for (product of products$; track product.id) {
+           <app-product [product]="product"></app-product>
+          }
+
+        }
+      </div>
+
+      <div class="load-more-btn">
+        <button i18n="@@show-more-btn">Show More</button>
+      </div>
+    </div>
+  </div>
+</section>
