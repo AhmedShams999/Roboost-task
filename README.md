@@ -226,8 +226,3 @@ Consistent commits are maintained for clear progress tracking and implementation
 > Made with ❤️ using Angular
 
 ```
-
----
-
-Let me know if you want to include **badges**, a **live demo link**, or screenshots to enhance this [README](f).
-```
