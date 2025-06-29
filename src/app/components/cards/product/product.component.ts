@@ -4,6 +4,7 @@ import { CurrencyPipe } from '@angular/common';
 import { DiscountedPricePipe } from '../../../pipes/discountedPrice.pipe';
 import { CartService } from '../../../services/cart/cart.service';
 import { ICartItem } from '../../../models/cart/cart';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product',
@@ -13,7 +14,7 @@ import { ICartItem } from '../../../models/cart/cart';
 })
 export class ProductComponent implements OnInit {
   @Input() product:IProduct|null = null;
-constructor(private cartService:CartService) { }
+constructor(private cartService:CartService,private router:Router) { }
 
   ngOnInit() {
   }
@@ -21,8 +22,6 @@ constructor(private cartService:CartService) { }
   // Modified addToCart to fetch from localStorage, update, and then send back
   addToCart(product:IProduct |null):void{
     if(product){
-      console.log(`[ProductComponent] Add to cart called for product ID: ${product.id} (Type: ${typeof product.id})`);
-
       let currentCart: ICartItem[] = [];
       if (typeof localStorage !== 'undefined') {
         const storedCart = localStorage.getItem('shopping_cart_items');
@@ -36,8 +35,7 @@ constructor(private cartService:CartService) { }
           }
         }
       }
-
-      // Logic to find and update/add the product in the cart array
+      
       let updatedCart: ICartItem[];
       const existingItemIndex = currentCart.findIndex(item => Number(item.product.id) === Number(product.id)); // IMPORTANT: Ensure type consistency here!
 
@@ -59,4 +57,7 @@ constructor(private cartService:CartService) { }
     }
   }
 
+  goToProductDetails(productId:number|null):void{
+    this.router.navigate([`products/${productId}`])
+  }
 }

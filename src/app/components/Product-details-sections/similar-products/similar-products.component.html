@@ -23,10 +23,10 @@
      </div>
 
       <div class="similar-products-container">
-        <app-product></app-product>
-        <app-product></app-product>
-        <app-product></app-product>
-        <app-product></app-product>
+        @for (product of similarProducts; track product.id) {
+          <app-product [product]="product"></app-product>
+        }
+
       </div>
   </div>
 </section>

@@ -1,17 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, LOCALE_ID, OnInit } from '@angular/core';
 import { RouteBackComponent } from '../../components/route-back/route-back.component';
 import { CommonModule } from '@angular/common';
 import { CartService } from '../../services/cart/cart.service';
 import { ICartItem } from '../../models/cart/cart';
+import { DiscountedPricePipe } from '../../pipes/discountedPrice.pipe';
 
 @Component({
   selector: 'app-Cart',
   templateUrl: './Cart.component.html',
   styleUrls: ['./Cart.component.css'],
-  imports: [RouteBackComponent, CommonModule],
+  imports: [RouteBackComponent, CommonModule,DiscountedPricePipe],
 })
 export class CartComponent implements OnInit {
-  constructor(private cartService: CartService) {}
+  constructor(
+    @Inject(LOCALE_ID)
+    public locale: string,
+    private cartService: CartService
+  ) {}
 
   get cartItems(): ICartItem[] | null {
     return this.cartService.cartItems();
@@ -20,7 +25,7 @@ export class CartComponent implements OnInit {
   get totalItems(): number | null {
     return this.cartService.totalItems();
   }
-  get cartTotal(): number | null {
+  get cartTotal(): string | null {
     return this.cartService.cartTotal();
   }
   ngOnInit(): void {}

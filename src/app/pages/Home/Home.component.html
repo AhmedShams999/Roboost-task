@@ -1,10 +1,10 @@
 <app-hero></app-hero>
 <app-feature-section></app-feature-section>
-<app-uniqe-products></app-uniqe-products>
+<app-uniqe-products [uniqeProducts]="uniqeProducts"></app-uniqe-products>
 <app-best-offers-section [whichToShow]="'showImg'"></app-best-offers-section>
-<app-category-section></app-category-section>
-<app-came-new-section></app-came-new-section>
+<app-category-section [categories]="categories"></app-category-section>
+<app-came-new-section [cameNewProducts]="cameNewProducts"></app-came-new-section>
 <app-ads-section></app-ads-section>
 <app-best-offers-section [whichToShow]="'showDots'"></app-best-offers-section>
-<app-special-products-section></app-special-products-section>
+<app-special-products-section [specialProducts]="specialProducts"></app-special-products-section>
 <app-video-section></app-video-section>

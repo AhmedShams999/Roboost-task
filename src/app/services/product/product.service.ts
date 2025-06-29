@@ -89,6 +89,8 @@ export class ProductService {
     },[])
   )
 
+
+  
   constructor(private http: HttpClient) { }
 
 
@@ -97,7 +99,23 @@ export class ProductService {
       catchError(this.handleError)
     );
   }
+  allProducts(): Observable<IProductResponse> {
+    return this.http.get<IProductResponse>(this.apiUrl+'/products')
+  }
 
+  getProductDetails(productId:string|null):Observable<IProduct> {
+    return this.http.get<IProduct>(this.apiUrl+'/products/'+productId)
+  }
+
+  getsimilarProducts(productCategory:string|null):Observable<IProduct[]> {
+    console.log(productCategory);
+    return this.http.get<IProductResponse>(this.apiUrl+'/products/category/'+productCategory).pipe(
+      map(res=>{
+        console.log(res);
+        return res.products.slice(0,4)
+      })
+    )
+  }
   searchProducts(query:string):void{
     this.currentSearchQuerySubject.next(query);
 

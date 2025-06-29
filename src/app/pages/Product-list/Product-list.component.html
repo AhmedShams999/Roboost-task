@@ -1,46 +1,3 @@
-<!-- <div class="product-list-container">
-  <h1>Products</h1>
-
-  <div class="controls">
-    <input
-      type="text"
-      placeholder="Search products..."
-      [value]="searchQuery"
-   
-    />
-
-    <select >
-      <option value="">All Categories</option>
-      <option *ngFor="let category of categories$ | async" [value]="category" [selected]="category === selectedCategory">
-        {{ category }}
-      </option>
-    </select>
-  </div>
-
-
-  <div *ngIf="isLoading()">Loading products...</div>
-  <div *ngIf="errorMessage()" style="color: red;">{{ errorMessage() }}</div>
-
-
-  <div class="product-grid">
-    <div *ngFor="let product of products$ " class="product-card">
-      <img [src]="product.thumbnail" alt="{{ product.title }}" />
-      <h3>{{ product.title }}</h3>
-      <p>{{ product.description }}</p>
-      <p>Price: ${{ product.price }}</p>
-      <p>Rating: {{ product.rating }}</p>
-      <p>Category: {{ product.category }}</p>
-    </div>
-  </div>
-
-  <button *ngIf="hasMoreProducts() && !isLoading()" (click)="onLoadMore()">
-    Load More ({{ totalProducts() - products$.length }} remaining)
-  </button>
-  <div *ngIf="!hasMoreProducts() && !isLoading()">
-    All products loaded.
-  </div>
-</div> -->
-
 <div class="container">
   <app-route-back [routesBack]="routeBack"></app-route-back>
 </div>
@@ -381,8 +338,12 @@
         }
       </div>
 
-      <div class="load-more-btn">
-        <button i18n="@@show-more-btn">Show More</button>
+      <div class="load-more-btn" (click)="onLoadMore()">
+        <button >
+          <p i18n="@@show-more-btn">Show More</p>
+          
+          {{ totalProducts() - products$.length }}
+        </button>
       </div>
     </div>
   </div>

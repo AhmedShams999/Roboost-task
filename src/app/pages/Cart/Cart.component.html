@@ -39,7 +39,7 @@
           </div>
 
           <div class="total-price">
-            <h2>50,000 ر.س</h2>
+            <h2> {{item.quantity * item.product.price|discountedPrice:item.product.discountPercentage}} <span i18n="@@cart.delivery-unit">SAR</span></h2>
           </div>
 
           <button
@@ -73,7 +73,13 @@
         <div class="discount-section">
           <input
             type="text"
-            [placeholder]="'Enter discount code'"
+            [ngStyle]="{
+              'border-left':locale=='ar'?'none':'auto',
+              'border-right':locale=='ar'?'auto':'none',
+              'border-radius':locale=='ar'? '0 4px 4px 0':'4px 0 0 4px'
+
+            }"
+            placeholder="Enter discount code"
             i18n-placeholder="@@cart.discount-placeholder"
             class="custom-input"
           />

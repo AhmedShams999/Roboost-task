@@ -18,9 +18,14 @@
         </div>
 
         <div class="top-bar-left">
-          <div class="--innerDiv">
-            <img src="images/Icons/lang.svg" i18n-alt="@@lang-icon-alt" alt="lang-icon">
-            <span i18n="@@language-currency" class="welcome-text">Arabic - SAR</span>
+          <div class="--innerDiv" (click)="onLanguageChange()">
+            @if (locale == 'ar') {
+              <img src="images/Icons/lang.svg" i18n-alt="@@lang-icon-alt" alt="lang-icon">
+              <span i18n="@@language-currency" class="welcome-text lang">Arabic - SAR</span>
+            }@else{
+              <img src="images/Icons/langEng.png" i18n-alt="@@lang-icon-alt" alt="lang-icon">
+              <span i18n="@@language-currency-eng" class="welcome-text lang">English - USD</span>
+            }
           </div>
           <hr />
           <span i18n="@@favorites" class="welcome-text">Favorites</span>
@@ -39,7 +44,7 @@
       <div class="header-content">
         <!-- Logo -->
         <div class="logo" (click)="onLogoClick()">
-          <img src="/images/Icons/Logo.svg" i18n-alt="@@logo-icon-alt" alt="Logo" class="logo-img">
+          <img src="images/Icons/Logo.svg" i18n-alt="@@logo-icon-alt" alt="Logo" class="logo-img">
         </div>
 
         <!-- Search Bar -->
@@ -53,7 +58,7 @@
               (input)="onSearch($event)"
             >
             <button class="search-btn">
-              <img src="/images/Icons/Search.svg" class="search-icon" i18n-alt="@@search-icon-alt" alt="search-icon">
+              <img src="images/Icons/Search.svg" class="search-icon" i18n-alt="@@search-icon-alt" alt="search-icon">
             </button>
           </div>
         </div>
@@ -76,23 +81,23 @@
 
               }@else {
                 <div class="user-icon-wrapper">
-                  <img src="/images/Icons/user.svg" class="user-icon" i18n-alt="@@user-icon-alt" alt="user-icon">
+                  <img src="images/Icons/user.svg" class="user-icon" i18n-alt="@@user-icon-alt" alt="user-icon">
                 </div>
                 <div class="login-text-wrapper">
                   <span i18n="@@welcome-message" class="welcome-text">Welcome</span>
                   <div class="login-dropdown">
                     <span i18n="@@login-label" class="login-text">Login</span>
-                    <img src="/images/Icons/arrow.svg" i18n-alt="@@arrow-icon-alt" alt="arrow-icon">
+                    <img src="images/Icons/arrow.svg" i18n-alt="@@arrow-icon-alt" alt="arrow-icon">
                   </div>
                 </div>
               }
             </div>
           </div>
           <!-- Cart -->
-          <div class="cart-container" (click)="onCartClick()">
+          <div class="cart-container" (click)="onCartClick()" routerLink="/cart">
             <div class="cart-wrapper">
               <div class="cart-icon-wrapper">
-                <img src="/images/Icons/cart.svg" class="cart-icon" i18n-alt="@@cart-icon-alt" alt="cart-icon">
+                <img src="images/Icons/cart.svg" class="cart-icon" i18n-alt="@@cart-icon-alt" alt="cart-icon">
                 <span class="cart-badge">{{ cartItemCount }}</span>
               </div>
               <div class="cart-text-wrapper">

@@ -1,5 +1,6 @@
-import { Component, Inject, LOCALE_ID, OnInit } from '@angular/core';
+import { Component, Inject, Input, LOCALE_ID, OnInit } from '@angular/core';
 import { ProductComponent } from '../../cards/product/product.component';
+import { IProduct } from '../../../models/product/products';
 
 @Component({
   selector: 'app-uniqe-products',
@@ -8,7 +9,7 @@ import { ProductComponent } from '../../cards/product/product.component';
   imports: [ProductComponent]
 })
 export class UniqeProductsComponent implements OnInit {
-
+  @Input() uniqeProducts: IProduct[]|null = null
   constructor(
     @Inject(LOCALE_ID) 
     public locale: string,

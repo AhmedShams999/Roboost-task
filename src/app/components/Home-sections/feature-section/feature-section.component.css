@@ -35,7 +35,7 @@
 /* Product section */
 
 .products-section {
-  padding: 80px 20px;
+  padding: 20px;
   background: white;
 }
 
@@ -108,14 +108,20 @@
       justify-content: center;
       margin: 0 auto;
    }
+   .products-grid{
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   }
+ 
 }
 
 
 @media (max-width: 768px) {
   .features-grid {
-   
     gap: 30px;
   }
+  .product-title{
+    font-size: 26px;
+   }
 
   .feature-card {
     padding: 30px 20px;

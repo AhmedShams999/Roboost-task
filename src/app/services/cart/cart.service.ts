@@ -17,7 +17,7 @@ export class CartService {
     this._cartItems().reduce(
       (sum, item) => sum + item.product.price * item.quantity,
       0
-    )
+    ).toFixed(2)
   );
 
   constructor() {

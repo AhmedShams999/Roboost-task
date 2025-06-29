@@ -54,11 +54,11 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Home-sections/hero/hero.component.html</context>
-          <context context-type="linenumber">35,37</context>
+          <context context-type="linenumber">46,48</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.html</context>
-          <context context-type="linenumber">369,371</context>
+          <context context-type="linenumber">386,388</context>
         </context-group>
       </trans-unit>
       <trans-unit id="came-new.header-title" datatype="html">
@@ -112,46 +112,46 @@
         <source>Earphones</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Home-sections/category-section/category-section.component.ts</context>
-          <context context-type="linenumber">14</context>
+          <context context-type="linenumber">17</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Home-sections/category-section/category-section.component.ts</context>
-          <context context-type="linenumber">38</context>
+          <context context-type="linenumber">41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="category.computer-screens" datatype="html">
         <source>Computer screens</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Home-sections/category-section/category-section.component.ts</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="category.mobiles" datatype="html">
         <source>Mobiles</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Home-sections/category-section/category-section.component.ts</context>
-          <context context-type="linenumber">22</context>
+          <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
       <trans-unit id="category.digital-watches" datatype="html">
         <source>Digital watches</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Home-sections/category-section/category-section.component.ts</context>
-          <context context-type="linenumber">26</context>
+          <context context-type="linenumber">29</context>
         </context-group>
       </trans-unit>
       <trans-unit id="category.headphones" datatype="html">
         <source>Headphones</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Home-sections/category-section/category-section.component.ts</context>
-          <context context-type="linenumber">30</context>
+          <context context-type="linenumber">33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="category.laptops" datatype="html">
         <source>Laptops</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Home-sections/category-section/category-section.component.ts</context>
-          <context context-type="linenumber">34</context>
+          <context context-type="linenumber">37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="shopping-now-btn" datatype="html">
@@ -237,7 +237,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Home-sections/hero/hero.component.html</context>
-          <context context-type="linenumber">42,44</context>
+          <context context-type="linenumber">60,62</context>
         </context-group>
         <note priority="1" from="description">arrow-right</note>
       </trans-unit>
@@ -245,26 +245,26 @@
         <source>arrow-left</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Home-sections/hero/hero.component.html</context>
-          <context context-type="linenumber">29,31</context>
+          <context context-type="linenumber">33,35</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Home-sections/hero/hero.component.html</context>
-          <context context-type="linenumber">39,42</context>
+          <context context-type="linenumber">53,56</context>
         </context-group>
         <note priority="1" from="description">arrow-left</note>
       </trans-unit>
       <trans-unit id="hero-section.offers" datatype="html">
-        <source>Best Discounts 2022</source>
+        <source> Best Discounts 2022 </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Home-sections/hero/hero.component.html</context>
-          <context context-type="linenumber">33,34</context>
+          <context context-type="linenumber">39,41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="hero-section.offers-des" datatype="html">
-        <source>Salla Store provides you with everything you need from electronics and home furniture in addition to the best discounts on products. Shop now and enjoy all the discounts on products.</source>
+        <source> Salla Store provides you with everything you need from electronics and home furniture in addition to the best discounts on products. Shop now and enjoy all the discounts on products. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Home-sections/hero/hero.component.html</context>
-          <context context-type="linenumber">34,35</context>
+          <context context-type="linenumber">42,45</context>
         </context-group>
       </trans-unit>
       <trans-unit id="special-products.title" datatype="html">
@@ -295,167 +295,179 @@
           <context context-type="linenumber">6,9</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="product-details-info.product-details-btn-1" datatype="html">
+        <source> Product details </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-info/product-info.component.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-details-info.product-details-btn-2" datatype="html">
+        <source> Product details </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-info/product-info.component.html</context>
+          <context context-type="linenumber">8,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-details-info.product-reviews-btn" datatype="html">
+        <source> Product Reviews </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-info/product-info.component.html</context>
+          <context context-type="linenumber">11,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-details-info.paragraph-1" datatype="html">
+        <source>The Apple iPhone 11 is designed with a striking and beautiful body that will make you love looking at it at all times. The 6.1-inch Liquid Retina display captures your attention and all your senses like no other smartphone. The glass and aluminum design makes it durable and gives the phone a stunning appearance.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-info/product-info.component.html</context>
+          <context context-type="linenumber">16,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-details-info.heading-1" datatype="html">
+        <source>For unforgettable moments</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-info/product-info.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-details-info.paragraph-2" datatype="html">
+        <source> The iPhone 11 Pro features a 6.1-inch display with a resolution of 828 x 1792 pixels. It is powered by Apple&apos;s A13 Bionic chip which ensures smooth performance whether you&apos;re using apps, Browse the web, or playing games. The phone comes with multiple storage options and advanced camera technology that captures stunning photos and videos in any lighting condition. The device also features improved battery life that can last all day, and it supports wireless charging and fast charging capabilities. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-info/product-info.component.html</context>
+          <context context-type="linenumber">27,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-details-info.paragraph-3" datatype="html">
+        <source> The iPhone 11 smartphone adds blazing speed to everything you do, thanks to the A12 Bionic chip featuring Neural Engine. This powerful chip helps smooth out intensive tasks. Whether it&apos;s shooting 4K video at 60 fps with extended dynamic range or relighting the subject in the foreground, this chip can do it all with impressive speed. Plus, </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-info/product-info.component.html</context>
+          <context context-type="linenumber">38,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-details-info.heading-2" datatype="html">
+        <source>Smooth Performance</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-info/product-info.component.html</context>
+          <context context-type="linenumber">46,47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-details-info.paragraph-4" datatype="html">
+        <source>This Apple smartphone features a 6.1-inch Liquid Retina display with HD technology, delivering clear and detailed visuals that take entertainment to a whole new level. Watch your favorite movies, exciting sports events, or browse various online content and enjoy them to the fullest, thanks to the exceptional integration of True Tone and Dolby Atmos technologies. The iPhone 11 delivers the highest quality visuals and brings them to life with a resolution of 1792 x 828 pixels. The oleophobic coating, resistant to fingerprints, ensures no unwanted marks on the screen, even after heavy use. Additionally, this smartphone has a long-lasting battery that provides hours of uninterrupted entertainment, making it the perfect travel companion.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-info/product-info.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-details-info.paragraph-5" datatype="html">
+        <source>The iPhone comes with 4GB of RAM, making multitasking faster than ever, while also quickly loading graphic-heavy games and video editing apps. You can store more entertainment content without deleting any previously saved data or photos, thanks to the 128GB built-in storage capacity. The iPhone 11 runs on iOS 13, making its use an unparalleled joy. This operating system adds a touch of excitement with features like system-wide Dark Mode, Sign in with Apple, and a new photo editing interface.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-info/product-info.component.html</context>
+          <context context-type="linenumber">48,52</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="product-preview-product-image-alt" datatype="html">
         <source>product</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">6</context>
+          <context context-type="linenumber">14</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="product-preview-selected-image-alt" datatype="html">
+        <source>previewed_img</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">9</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">12</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">15</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">23,24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="product-preview-samsung-logo-alt" datatype="html">
         <source>Samsung</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">29</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="product-preview-product-title" datatype="html">
-        <source> iPhone 11 Mobile Dual SIM &amp; 64GB Plus Two Cameras with High Quality </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">34,37</context>
+          <context context-type="linenumber">34,35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="product-preview-sent-icon-alt" datatype="html">
         <source>sent-icon</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">50,51</context>
         </context-group>
       </trans-unit>
       <trans-unit id="product-preview-buyer-text" datatype="html">
-        <source>Buyer <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;highlight&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{16}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> units</source>
+        <source>Buyer <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;highlight&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{ product?.stock }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> units</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">44,45</context>
+          <context context-type="linenumber">54,55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="product-preview-fire-icon-alt" datatype="html">
         <source>fire-icon</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">50</context>
+          <context context-type="linenumber">62,63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="product-preview-purchased-text" datatype="html">
-        <source>Purchased <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;highlight&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{250}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> times</source>
+        <source>Purchased <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;highlight&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{ 250 }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> times</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">53,54</context>
+          <context context-type="linenumber">66,67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="product-preview-reviews-text" datatype="html">
-        <source>(<x id="INTERPOLATION" equiv-text="{{10}}"/>) Reviews</source>
+        <source>(<x id="INTERPOLATION" equiv-text="{{ 10 }}"/>) Reviews</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">113,114</context>
+          <context context-type="linenumber">132,133</context>
         </context-group>
       </trans-unit>
       <trans-unit id="product-preview-add-to-favorites-text" datatype="html">
         <source>Add to Favorites</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">149,153</context>
+          <context context-type="linenumber">170,175</context>
         </context-group>
       </trans-unit>
       <trans-unit id="product-preview-share-icon-alt" datatype="html">
         <source>share-icon</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">155</context>
+          <context context-type="linenumber">179,180</context>
         </context-group>
       </trans-unit>
       <trans-unit id="product-preview-share-product-text" datatype="html">
         <source>Share Product</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">157,161</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="product-preview-product-description" datatype="html">
-        <source> iPhone 11 dual SIM mobile for communication with 64GB internal memory and supports 4G LTE network technology with Miss application for commands, responsive, global version </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">163,168</context>
+          <context context-type="linenumber">184,189</context>
         </context-group>
       </trans-unit>
       <trans-unit id="product-preview-view-more-link" datatype="html">
         <source>View More</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">169,172</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="product-preview-tag-electronics" datatype="html">
-        <source>Electronics</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">173,175</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="product-preview-tag-mobiles" datatype="html">
-        <source>Mobiles</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">175,177</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="product-preview-tag-iphone" datatype="html">
-        <source>iPhone</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">177,179</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="product-preview-tag-discounts" datatype="html">
-        <source>Discounts</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">179,181</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="product-preview-tag-electronics-2" datatype="html">
-        <source>Electronics</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">181,184</context>
+          <context context-type="linenumber">196,200</context>
         </context-group>
       </trans-unit>
       <trans-unit id="product-preview-select-quantity-label" datatype="html">
         <source>Select Quantity</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">187,188</context>
+          <context context-type="linenumber">213,215</context>
         </context-group>
       </trans-unit>
       <trans-unit id="product-preview-quantity-input-placeholder" datatype="html">
         <source>Quantity</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">197,198</context>
+          <context context-type="linenumber">227,228</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2989538405035420938" datatype="html">
         <source>SAR</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">208,210</context>
+          <context context-type="linenumber">240,242</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.ts</context>
@@ -474,65 +486,65 @@
         <source>Quick Purchase</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">235,237</context>
+          <context context-type="linenumber">267,269</context>
         </context-group>
       </trans-unit>
       <trans-unit id="product-preview-add-btn" datatype="html">
         <source>Add to Cart</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">258,261</context>
+          <context context-type="linenumber">290,293</context>
         </context-group>
       </trans-unit>
       <trans-unit id="product-preview-payment-icon-alt" datatype="html">
         <source>payment-icon</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">268</context>
+          <context context-type="linenumber">302,303</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">276</context>
+          <context context-type="linenumber">317,318</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">284</context>
+          <context context-type="linenumber">332,333</context>
         </context-group>
       </trans-unit>
       <trans-unit id="product-preview-tapy-payment" datatype="html">
-        <source>SAR Pay a quarter of the value 11.77. Pay in installments over 3 months. No fees.</source>
+        <source> SAR Pay a quarter of the value 11.77. Pay in installments over 3 months. No fees. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">271,272</context>
+          <context context-type="linenumber">308,311</context>
         </context-group>
       </trans-unit>
       <trans-unit id="know-more-btn" datatype="html">
         <source>know more</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">272,274</context>
+          <context context-type="linenumber">311,313</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">280,282</context>
+          <context context-type="linenumber">326,328</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">288,290</context>
+          <context context-type="linenumber">340,342</context>
         </context-group>
       </trans-unit>
       <trans-unit id="product-preview-spoti-payment" datatype="html">
-        <source>We will divide the payment for your purchases into four installments at no cost.</source>
+        <source> We will divide the payment for your purchases into four installments at no cost. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">279,280</context>
+          <context context-type="linenumber">323,326</context>
         </context-group>
       </trans-unit>
       <trans-unit id="product-preview-tamra-payment" datatype="html">
-        <source>Pay only 586 SAR in 3 installments without fees.</source>
+        <source> Pay only 586 SAR in 3 installments without fees. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
-          <context context-type="linenumber">287,288</context>
+          <context context-type="linenumber">338,340</context>
         </context-group>
       </trans-unit>
       <trans-unit id="similar-products.title" datatype="html">
@@ -547,6 +559,13 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/Product-details-sections/similar-products/similar-products.component.html</context>
           <context context-type="linenumber">6,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product.discount" datatype="html">
+        <source>Discount</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cards/product/product.component.html</context>
+          <context context-type="linenumber">4</context>
         </context-group>
       </trans-unit>
       <trans-unit id="add-cart-btn" datatype="html">
@@ -579,7 +598,7 @@
           /&gt;"/><x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;/svg&gt;"/> Add To Cart </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/cards/product/product.component.html</context>
-          <context context-type="linenumber">29,49</context>
+          <context context-type="linenumber">28,48</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footer.about_store.title" datatype="html">
@@ -810,219 +829,230 @@
         <source>lang-icon</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">22,23</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="language-currency-eng" datatype="html">
+        <source>English - USD</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">24,26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="language-currency" datatype="html">
         <source>Arabic - SAR</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">23,25</context>
+          <context context-type="linenumber">27,29</context>
         </context-group>
       </trans-unit>
       <trans-unit id="favorites" datatype="html">
         <source>Favorites</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">26,27</context>
+          <context context-type="linenumber">31,32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="return-policy" datatype="html">
         <source>Return or Exchange Policy</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">28,30</context>
+          <context context-type="linenumber">33,35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact-us" datatype="html">
         <source>Contact Us</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">30,32</context>
+          <context context-type="linenumber">35,37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="logo-icon-alt" datatype="html">
         <source>Logo</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">42,43</context>
+          <context context-type="linenumber">47,48</context>
         </context-group>
       </trans-unit>
       <trans-unit id="search-placeholder" datatype="html">
         <source>Search for what you want</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">51,52</context>
+          <context context-type="linenumber">56,57</context>
         </context-group>
       </trans-unit>
       <trans-unit id="search-icon-alt" datatype="html">
         <source>search-icon</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">56,58</context>
+          <context context-type="linenumber">61,63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="user-icon-alt" datatype="html">
         <source>user-icon</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">68,70</context>
+          <context context-type="linenumber">73,75</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">79,81</context>
+          <context context-type="linenumber">84,86</context>
         </context-group>
       </trans-unit>
       <trans-unit id="welcome-message" datatype="html">
         <source>Welcome</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">71,72</context>
+          <context context-type="linenumber">76,77</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">82,83</context>
+          <context context-type="linenumber">87,88</context>
         </context-group>
       </trans-unit>
       <trans-unit id="login-label" datatype="html">
         <source>Login</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">84,85</context>
+          <context context-type="linenumber">89,90</context>
         </context-group>
       </trans-unit>
       <trans-unit id="arrow-icon-alt" datatype="html">
         <source>arrow-icon</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">85,87</context>
+          <context context-type="linenumber">90,92</context>
         </context-group>
       </trans-unit>
       <trans-unit id="cart-icon-alt" datatype="html">
         <source>cart-icon</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">95,96</context>
+          <context context-type="linenumber">100,101</context>
         </context-group>
       </trans-unit>
       <trans-unit id="cart-label" datatype="html">
         <source>Shopping Cart</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">99,100</context>
+          <context context-type="linenumber">104,105</context>
         </context-group>
       </trans-unit>
       <trans-unit id="all-categories" datatype="html">
         <source>All Categories</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">115,116</context>
+          <context context-type="linenumber">120,121</context>
         </context-group>
       </trans-unit>
       <trans-unit id="dropdown-icon-alt" datatype="html">
         <source>dropdown-icon</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">116,119</context>
+          <context context-type="linenumber">121,124</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">122,125</context>
+          <context context-type="linenumber">127,130</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">128,131</context>
+          <context context-type="linenumber">133,136</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">134,137</context>
+          <context context-type="linenumber">139,142</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">140,143</context>
+          <context context-type="linenumber">145,148</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">146,149</context>
+          <context context-type="linenumber">151,154</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">152,155</context>
+          <context context-type="linenumber">157,160</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">158,161</context>
+          <context context-type="linenumber">163,166</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">164,167</context>
+          <context context-type="linenumber">169,172</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">170,173</context>
+          <context context-type="linenumber">175,178</context>
         </context-group>
       </trans-unit>
       <trans-unit id="electronics" datatype="html">
         <source>Electronics</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">121,122</context>
+          <context context-type="linenumber">126,127</context>
         </context-group>
       </trans-unit>
       <trans-unit id="accessories" datatype="html">
         <source>Accessories</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">127,128</context>
+          <context context-type="linenumber">132,133</context>
         </context-group>
       </trans-unit>
       <trans-unit id="external-cables" datatype="html">
         <source>External Cables</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">133,134</context>
+          <context context-type="linenumber">138,139</context>
         </context-group>
       </trans-unit>
       <trans-unit id="computer-monitors" datatype="html">
         <source>Computer Monitors</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">139,140</context>
+          <context context-type="linenumber">144,145</context>
         </context-group>
       </trans-unit>
       <trans-unit id="accessories-nav" datatype="html">
         <source>Accessories</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">145,146</context>
+          <context context-type="linenumber">150,151</context>
         </context-group>
       </trans-unit>
       <trans-unit id="electric-amplifiers" datatype="html">
         <source>Electric Amplifiers</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">151,152</context>
+          <context context-type="linenumber">156,157</context>
         </context-group>
       </trans-unit>
       <trans-unit id="electric-amplifiers-duplicate" datatype="html">
         <source>Electric Amplifiers</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">157,158</context>
+          <context context-type="linenumber">162,163</context>
         </context-group>
       </trans-unit>
       <trans-unit id="electronics-nav" datatype="html">
         <source>Electronics</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">163,164</context>
+          <context context-type="linenumber">168,169</context>
         </context-group>
       </trans-unit>
       <trans-unit id="headphones" datatype="html">
         <source>Headphones</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">169,170</context>
+          <context context-type="linenumber">174,175</context>
         </context-group>
       </trans-unit>
       <trans-unit id="main_link" datatype="html">
@@ -1030,6 +1060,73 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/route-back/route-back.component.html</context>
           <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cart.delivery-unit" datatype="html">
+        <source>SAR</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Cart/Cart.component.html</context>
+          <context context-type="linenumber">42,45</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Cart/Cart.component.html</context>
+          <context context-type="linenumber">94,96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cart.order-summary" datatype="html">
+        <source> Order Summary </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Cart/Cart.component.html</context>
+          <context context-type="linenumber">59,62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cart.product-total" datatype="html">
+        <source>Product Total</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Cart/Cart.component.html</context>
+          <context context-type="linenumber">63,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cart.do-you-have-discount" datatype="html">
+        <source>Do you have a discount code</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Cart/Cart.component.html</context>
+          <context context-type="linenumber">69,73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cart.discount-placeholder" datatype="html">
+        <source>Enter discount code</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Cart/Cart.component.html</context>
+          <context context-type="linenumber">82,83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cart.add-discount" datatype="html">
+        <source>Add</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Cart/Cart.component.html</context>
+          <context context-type="linenumber">86,89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cart.delivery" datatype="html">
+        <source>Delivery</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Cart/Cart.component.html</context>
+          <context context-type="linenumber">91,93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cart.shipping-tax-included" datatype="html">
+        <source>Free shipping included with tax <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Cart/Cart.component.html</context>
+          <context context-type="linenumber">99,100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cart.complete-order" datatype="html">
+        <source> Complete Order </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Cart/Cart.component.html</context>
+          <context context-type="linenumber">103,105</context>
         </context-group>
       </trans-unit>
       <trans-unit id="login-title" datatype="html">
@@ -1181,14 +1278,14 @@
         <source>All products</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/Product-details/Product-details.component.ts</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="route-back.Product-details" datatype="html">
         <source>Product details</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/Product-details/Product-details.component.ts</context>
-          <context context-type="linenumber">22</context>
+          <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
       <trans-unit id="products-list.searchProducts-placeholder" datatype="html">
@@ -1216,92 +1313,92 @@
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Sort by: <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>High to Low</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.html</context>
-          <context context-type="linenumber">346,347</context>
+          <context context-type="linenumber">357,358</context>
         </context-group>
       </trans-unit>
       <trans-unit id="products-list.allProductsLink" datatype="html">
         <source>All products</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
-          <context context-type="linenumber">74</context>
+          <context context-type="linenumber">32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="products-list.category" datatype="html">
         <source>category</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
-          <context context-type="linenumber">88</context>
+          <context context-type="linenumber">46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="products-list.all" datatype="html">
         <source>All</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
-          <context context-type="linenumber">91</context>
+          <context context-type="linenumber">49</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
-          <context context-type="linenumber">98</context>
+          <context context-type="linenumber">56</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
-          <context context-type="linenumber">112</context>
+          <context context-type="linenumber">70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="products-list.brand" datatype="html">
         <source>Brand</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
-          <context context-type="linenumber">95</context>
+          <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="products-list.rateing" datatype="html">
         <source>Rateing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
-          <context context-type="linenumber">107</context>
+          <context context-type="linenumber">65</context>
         </context-group>
       </trans-unit>
       <trans-unit id="products-list.5-star" datatype="html">
         <source>5-star</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
-          <context context-type="linenumber">125</context>
+          <context context-type="linenumber">83</context>
         </context-group>
       </trans-unit>
       <trans-unit id="products-list.4-star" datatype="html">
         <source>4-star</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
-          <context context-type="linenumber">138</context>
+          <context context-type="linenumber">96</context>
         </context-group>
       </trans-unit>
       <trans-unit id="products-list.3-star" datatype="html">
         <source>3-star</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
-          <context context-type="linenumber">151</context>
+          <context context-type="linenumber">109</context>
         </context-group>
       </trans-unit>
       <trans-unit id="products-list.2-star" datatype="html">
         <source>2-star</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
-          <context context-type="linenumber">164</context>
+          <context context-type="linenumber">122</context>
         </context-group>
       </trans-unit>
       <trans-unit id="products-list.1-star" datatype="html">
         <source>1-star</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
-          <context context-type="linenumber">177</context>
+          <context context-type="linenumber">135</context>
         </context-group>
       </trans-unit>
       <trans-unit id="products-list.price" datatype="html">
         <source>Price</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/Product-list/Product-list.component.ts</context>
-          <context context-type="linenumber">191</context>
+          <context context-type="linenumber">149</context>
         </context-group>
       </trans-unit>
       <trans-unit id="register-title" datatype="html">

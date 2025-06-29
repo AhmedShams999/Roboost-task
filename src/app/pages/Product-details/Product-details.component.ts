@@ -4,6 +4,9 @@ import { RouteBackComponent } from "../../components/route-back/route-back.compo
 import { ProductInfoComponent } from "../../components/Product-details-sections/product-info/product-info.component";
 import { SimilarProductsComponent } from "../../components/Product-details-sections/similar-products/similar-products.component";
 import { IrouteBack } from '../../models/routeBack/IrouteBack';
+import { ActivatedRoute } from '@angular/router';
+import { ProductService } from '../../services/product/product.service';
+import { IProduct } from '../../models/product/products';
 
 @Component({
   selector: 'app-Product-details',
@@ -23,9 +26,19 @@ export class ProductDetailsComponent implements OnInit {
       }
       
     ]
-  constructor() { }
+    product:IProduct|null = null;
+   productId: string | null = null;
+  constructor(private route: ActivatedRoute,private productService:ProductService) { }
 
   ngOnInit() {
+    this.productId = this.route.snapshot.paramMap.get('productId');
+    console.log('Product ID (snapshot):', this.productId);
+    this.productService.getProductDetails(this.productId).subscribe({
+      next: res=>{
+        console.log(res);
+        this.product = res
+      }
+    })
   }
 
 }

@@ -2,55 +2,68 @@
   <div class="container">
     <div class="product-images">
       <div class="previewable-images">
-        <div class="preview-img">
-          <img src="/images/img/test-product.png" alt="product" i18n-alt="@@product-preview-product-image-alt" />
+        @for (item of product?.images; track $index) {
+        <div
+          class="preview-img"
+          [class.active]="item === selectedImageUrl"
+          (click)="selectImage(item)"
+        >
+          <img
+            [src]="item"
+            alt="product"
+            i18n-alt="@@product-preview-product-image-alt"
+          />
         </div>
-        <div class="preview-img">
-          <img src="/images/img/test-product.png" alt="product" i18n-alt="@@product-preview-product-image-alt" />
-        </div>
-        <div class="preview-img">
-          <img src="/images/img/test-product.png" alt="product" i18n-alt="@@product-preview-product-image-alt" />
-        </div>
-        <div class="preview-img">
-          <img src="/images/img/test-product.png" alt="product" i18n-alt="@@product-preview-product-image-alt" />
-        </div>
-        <div class="preview-img">
-          <img src="/images/img/test-product.png" alt="product" i18n-alt="@@product-preview-product-image-alt" />
-        </div>
+        }
       </div>
 
       <div class="selected-preview-image">
-        <img src="/images/img/test-product.png" alt="" i18n-alt="@@product-preview-selected-image-alt" />
+        <img
+          [src]="selectedImageUrl"
+          alt="previewed_img"
+          i18n-alt="@@product-preview-selected-image-alt"
+        />
       </div>
     </div>
     <div class="product-info">
       <!-- Samsung Logo -->
       <div class="logo-container">
-        <img src="/images/img/samsung.svg" alt="Samsung" class="samsung-logo" i18n-alt="@@product-preview-samsung-logo-alt" />
+        <img
+          src="images/img/samsung.svg"
+          alt="Samsung"
+          class="samsung-logo"
+          i18n-alt="@@product-preview-samsung-logo-alt"
+        />
       </div>
 
       <!-- Product Title -->
-      <h1 class="product-title" i18n="@@product-preview-product-title">
-        iPhone 11 Mobile Dual SIM & 64GB Plus Two Cameras with High Quality
+      <h1 class="product-title">
+        {{ product?.title }}
       </h1>
 
       <!-- Purchase Info -->
       <div class="purchase-info">
         <div class="purchase-item">
           <span class="icon"
-            ><img src="/images/Icons/sent.svg" alt="sent-icon" i18n-alt="@@product-preview-sent-icon-alt"
+            ><img
+              src="images/Icons/sent.svg"
+              alt="sent-icon"
+              i18n-alt="@@product-preview-sent-icon-alt"
           /></span>
           <span class="text" i18n="@@product-preview-buyer-text"
-            >Buyer <span class="highlight">{{16}}</span> units</span
+            >Buyer <span class="highlight">{{ product?.stock }}</span> units</span
           >
         </div>
         <hr />
         <div class="purchase-item">
           <span class="icon"
-            ><img src="/images/Icons/fire.svg" alt="fire-icon" i18n-alt="@@product-preview-fire-icon-alt"
+            ><img
+              src="images/Icons/fire.svg"
+              alt="fire-icon"
+              i18n-alt="@@product-preview-fire-icon-alt"
           /></span>
           <span class="text" i18n="@@product-preview-purchased-text"
-            >Purchased <span class="highlight">{{250}}</span> times</span
+            >Purchased <span class="highlight">{{ 250 }}</span> times</span
           >
         </div>
       </div>
@@ -59,58 +72,65 @@
       <div class="actions-row">
         <div class="rating">
           <div class="stars">
-            <svg width="15" height="16" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            @for (i of getFilledStarsArray(); track i) {
+            <svg
+              width="15"
+              height="16"
+              viewBox="0 0 13 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <g clip-path="url(#clip0_2136_1942)">
-              <path d="M12.9813 5.57092C12.9365 5.43302 12.8174 5.33252 12.6739 5.3117L8.64387 4.72607L6.84152 1.07423C6.77739 0.944229 6.64498 0.861938 6.50002 0.861938C6.35504 0.861938 6.22266 0.944229 6.15849 1.07423L4.35607 4.72607L0.326087 5.3117C0.182656 5.33252 0.0634476 5.43302 0.0186587 5.57089C-0.0261556 5.70879 0.0112193 5.86014 0.115041 5.96132L3.03109 8.80389L2.34281 12.8177C2.31828 12.9606 2.37703 13.105 2.49431 13.1902C2.56066 13.2384 2.63924 13.2629 2.7182 13.2629C2.77884 13.2629 2.83967 13.2485 2.89538 13.2192L6.5 11.3241L10.1045 13.2192C10.2328 13.2866 10.3883 13.2754 10.5056 13.1902C10.6228 13.105 10.6816 12.9605 10.6571 12.8177L9.9686 8.80389L12.885 5.96129C12.9888 5.86014 13.0262 5.70879 12.9813 5.57092Z" fill="#FFC62A"/>
+                <path
+                  d="M12.9813 5.57092C12.9365 5.43302 12.8174 5.33252 12.6739 5.3117L8.64387 4.72607L6.84152 1.07423C6.77739 0.944229 6.64498 0.861938 6.50002 0.861938C6.35504 0.861938 6.22266 0.944229 6.15849 1.07423L4.35607 4.72607L0.326087 5.3117C0.182656 5.33252 0.0634476 5.43302 0.0186587 5.57089C-0.0261556 5.70879 0.0112193 5.86014 0.115041 5.96132L3.03109 8.80389L2.34281 12.8177C2.31828 12.9606 2.37703 13.105 2.49431 13.1902C2.56066 13.2384 2.63924 13.2629 2.7182 13.2629C2.77884 13.2629 2.83967 13.2485 2.89538 13.2192L6.5 11.3241L10.1045 13.2192C10.2328 13.2866 10.3883 13.2754 10.5056 13.1902C10.6228 13.105 10.6816 12.9605 10.6571 12.8177L9.9686 8.80389L12.885 5.96129C12.9888 5.86014 13.0262 5.70879 12.9813 5.57092Z"
+                  fill="#FFC62A"
+                />
               </g>
               <defs>
-              <clipPath id="clip0_2136_1942">
-              <rect width="13" height="13" fill="white" transform="translate(0 0.562622)"/>
-              </clipPath>
+                <clipPath id="clip0_2136_1942">
+                  <rect
+                    width="13"
+                    height="13"
+                    fill="white"
+                    transform="translate(0 0.562622)"
+                  />
+                </clipPath>
               </defs>
             </svg>
-            <svg width="15" height="16" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            }
+
+            <!-- Empty Stars -->
+            @for (i of getEmptyStarsArray(); track i) {
+            <svg
+              width="15"
+              height="16"
+              viewBox="0 0 13 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <g clip-path="url(#clip0_2136_1942)">
-              <path d="M12.9813 5.57092C12.9365 5.43302 12.8174 5.33252 12.6739 5.3117L8.64387 4.72607L6.84152 1.07423C6.77739 0.944229 6.64498 0.861938 6.50002 0.861938C6.35504 0.861938 6.22266 0.944229 6.15849 1.07423L4.35607 4.72607L0.326087 5.3117C0.182656 5.33252 0.0634476 5.43302 0.0186587 5.57089C-0.0261556 5.70879 0.0112193 5.86014 0.115041 5.96132L3.03109 8.80389L2.34281 12.8177C2.31828 12.9606 2.37703 13.105 2.49431 13.1902C2.56066 13.2384 2.63924 13.2629 2.7182 13.2629C2.77884 13.2629 2.83967 13.2485 2.89538 13.2192L6.5 11.3241L10.1045 13.2192C10.2328 13.2866 10.3883 13.2754 10.5056 13.1902C10.6228 13.105 10.6816 12.9605 10.6571 12.8177L9.9686 8.80389L12.885 5.96129C12.9888 5.86014 13.0262 5.70879 12.9813 5.57092Z" fill="#FFC62A"/>
+                <path
+                  d="M12.9813 5.57092C12.9365 5.43302 12.8174 5.33252 12.6739 5.3117L8.64387 4.72607L6.84152 1.07423C6.77739 0.944229 6.64498 0.861938 6.50002 0.861938C6.35504 0.861938 6.22266 0.944229 6.15849 1.07423L4.35607 4.72607L0.326087 5.3117C0.182656 5.33252 0.0634476 5.43302 0.0186587 5.57089C-0.0261556 5.70879 0.0112193 5.86014 0.115041 5.96132L3.03109 8.80389L2.34281 12.8177C2.31828 12.9606 2.37703 13.105 2.49431 13.1902C2.56066 13.2384 2.63924 13.2629 2.7182 13.2629C2.77884 13.2629 2.83967 13.2485 2.89538 13.2192L6.5 11.3241L10.1045 13.2192C10.2328 13.2866 10.3883 13.2754 10.5056 13.1902C10.6228 13.105 10.6816 12.9605 10.6571 12.8177L9.9686 8.80389L12.885 5.96129C12.9888 5.86014 13.0262 5.70879 12.9813 5.57092Z"
+                  fill="#A5A5A5"
+                />
+                <!-- Changed fill to gray -->
               </g>
               <defs>
-              <clipPath id="clip0_2136_1942">
-              <rect width="13" height="13" fill="white" transform="translate(0 0.562622)"/>
-              </clipPath>
+                <clipPath id="clip0_2136_1942">
+                  <rect
+                    width="13"
+                    height="13"
+                    fill="white"
+                    transform="translate(0 0.562622)"
+                  />
+                </clipPath>
               </defs>
             </svg>
-            <svg width="15" height="16" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_2136_1942)">
-              <path d="M12.9813 5.57092C12.9365 5.43302 12.8174 5.33252 12.6739 5.3117L8.64387 4.72607L6.84152 1.07423C6.77739 0.944229 6.64498 0.861938 6.50002 0.861938C6.35504 0.861938 6.22266 0.944229 6.15849 1.07423L4.35607 4.72607L0.326087 5.3117C0.182656 5.33252 0.0634476 5.43302 0.0186587 5.57089C-0.0261556 5.70879 0.0112193 5.86014 0.115041 5.96132L3.03109 8.80389L2.34281 12.8177C2.31828 12.9606 2.37703 13.105 2.49431 13.1902C2.56066 13.2384 2.63924 13.2629 2.7182 13.2629C2.77884 13.2629 2.83967 13.2485 2.89538 13.2192L6.5 11.3241L10.1045 13.2192C10.2328 13.2866 10.3883 13.2754 10.5056 13.1902C10.6228 13.105 10.6816 12.9605 10.6571 12.8177L9.9686 8.80389L12.885 5.96129C12.9888 5.86014 13.0262 5.70879 12.9813 5.57092Z" fill="#FFC62A"/>
-              </g>
-              <defs>
-              <clipPath id="clip0_2136_1942">
-              <rect width="13" height="13" fill="white" transform="translate(0 0.562622)"/>
-              </clipPath>
-              </defs>
-            </svg>
-            <svg width="15" height="16" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_2136_1942)">
-              <path d="M12.9813 5.57092C12.9365 5.43302 12.8174 5.33252 12.6739 5.3117L8.64387 4.72607L6.84152 1.07423C6.77739 0.944229 6.64498 0.861938 6.50002 0.861938C6.35504 0.861938 6.22266 0.944229 6.15849 1.07423L4.35607 4.72607L0.326087 5.3117C0.182656 5.33252 0.0634476 5.43302 0.0186587 5.57089C-0.0261556 5.70879 0.0112193 5.86014 0.115041 5.96132L3.03109 8.80389L2.34281 12.8177C2.31828 12.9606 2.37703 13.105 2.49431 13.1902C2.56066 13.2384 2.63924 13.2629 2.7182 13.2629C2.77884 13.2629 2.83967 13.2485 2.89538 13.2192L6.5 11.3241L10.1045 13.2192C10.2328 13.2866 10.3883 13.2754 10.5056 13.1902C10.6228 13.105 10.6816 12.9605 10.6571 12.8177L9.9686 8.80389L12.885 5.96129C12.9888 5.86014 13.0262 5.70879 12.9813 5.57092Z" fill="#FFC62A"/>
-              </g>
-              <defs>
-              <clipPath id="clip0_2136_1942">
-              <rect width="13" height="13" fill="white" transform="translate(0 0.562622)"/>
-              </clipPath>
-              </defs>
-            </svg>
-            <svg width="15" height="16" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_2136_1942)">
-              <path d="M12.9813 5.57092C12.9365 5.43302 12.8174 5.33252 12.6739 5.3117L8.64387 4.72607L6.84152 1.07423C6.77739 0.944229 6.64498 0.861938 6.50002 0.861938C6.35504 0.861938 6.22266 0.944229 6.15849 1.07423L4.35607 4.72607L0.326087 5.3117C0.182656 5.33252 0.0634476 5.43302 0.0186587 5.57089C-0.0261556 5.70879 0.0112193 5.86014 0.115041 5.96132L3.03109 8.80389L2.34281 12.8177C2.31828 12.9606 2.37703 13.105 2.49431 13.1902C2.56066 13.2384 2.63924 13.2629 2.7182 13.2629C2.77884 13.2629 2.83967 13.2485 2.89538 13.2192L6.5 11.3241L10.1045 13.2192C10.2328 13.2866 10.3883 13.2754 10.5056 13.1902C10.6228 13.105 10.6816 12.9605 10.6571 12.8177L9.9686 8.80389L12.885 5.96129C12.9888 5.86014 13.0262 5.70879 12.9813 5.57092Z" fill="#FFC62A"/>
-              </g>
-              <defs>
-              <clipPath id="clip0_2136_1942">
-              <rect width="13" height="13" fill="white" transform="translate(0 0.562622)"/>
-              </clipPath>
-              </defs>
-            </svg>
+            }
           </div>
-          <span class="reviews" i18n="@@product-preview-reviews-text">({{10}}) Reviews</span>
+          <span class="reviews" i18n="@@product-preview-reviews-text"
+            >({{ 10 }}) Reviews</span
+          >
         </div>
 
         <hr />
@@ -146,65 +166,77 @@
             }
           </span>
 
-          <span class="text" i18n="@@product-preview-add-to-favorites-text">Add to Favorites</span>
+          <span class="text" i18n="@@product-preview-add-to-favorites-text"
+            >Add to Favorites</span
+          >
         </div>
 
         <hr />
         <div class="action-item" (click)="shareProduct()">
           <span class="icon">
-            <img src="/images/Icons/share.svg" alt="share-icon" i18n-alt="@@product-preview-share-icon-alt" />
+            <img
+              src="images/Icons/share.svg"
+              alt="share-icon"
+              i18n-alt="@@product-preview-share-icon-alt"
+            />
           </span>
-          <span class="text" i18n="@@product-preview-share-product-text">Share Product</span>
+          <span class="text" i18n="@@product-preview-share-product-text"
+            >Share Product</span
+          >
         </div>
       </div>
 
       <!-- Product Description -->
-      <p class="product-description" i18n="@@product-preview-product-description">
-        iPhone 11 dual SIM mobile for communication with 64GB internal memory
-        and supports 4G LTE network technology with Miss application for
-        commands, responsive, global version
+      <p class="product-description">
+        {{ product?.description }}
       </p>
 
       <!-- View More Link -->
-      <a href="#" class="view-more" i18n="@@product-preview-view-more-link">View More</a>
+      <a href="#" class="view-more" i18n="@@product-preview-view-more-link"
+        >View More</a
+      >
 
       <!-- Category Tags -->
       <div class="category-tags">
-        <span class="tag" i18n="@@product-preview-tag-electronics">Electronics</span>
+        @for (item of product?.tags; track $index) {
+        <span class="tag">{{ item }}</span>
         <hr />
-        <span class="tag" i18n="@@product-preview-tag-mobiles">Mobiles</span>
-        <hr />
-        <span class="tag" i18n="@@product-preview-tag-iphone">iPhone</span>
-        <hr />
-        <span class="tag" i18n="@@product-preview-tag-discounts">Discounts</span>
-        <hr />
-        <span class="tag" i18n="@@product-preview-tag-electronics-2">Electronics</span>
+        }
       </div>
 
       <!-- Price and Quantity Section -->
       <div class="price-quantity-section">
         <div class="quantity-container">
-          <span class="quantity-label" i18n="@@product-preview-select-quantity-label">Select Quantity</span>
+          <span
+            class="quantity-label"
+            i18n="@@product-preview-select-quantity-label"
+            >Select Quantity</span
+          >
           <div class="quantity-btn-container">
-            <button class="quantity-btn minus" (click)="decreaseQuantity()">
+            <button
+              class="quantity-btn minus"
+              (click)="decrementQuantityToAdd()"
+            >
               -
             </button>
             <input
               type="number"
-              [value]="quantity"
+              [value]="quantityToAdd"
               class="quantity-input"
               readonly
               placeholder="Quantity"
               i18n-placeholder="@@product-preview-quantity-input-placeholder"
             />
-            <button class="quantity-btn plus" (click)="increaseQuantity()">
+            <button class="quantity-btn plus" (click)="increaseQuantityToAdd()">
               +
             </button>
           </div>
         </div>
 
         <div class="price-container">
-          <span class="price">250.00</span>
+          <span class="price">{{
+            product?.price | discountedPrice : product?.discountPercentage
+          }}</span>
           <span class="currency" i18n="@@2989538405035420938">SAR</span>
         </div>
       </div>
@@ -234,7 +266,7 @@
           </svg>
           <p i18n="@@product-preview-quick-btn">Quick Purchase</p>
         </button>
-        <button class="btn btn-outline" (click)="addToCart()">
+        <button class="btn btn-outline" (click)="addToCart(product)">
           <svg
             width="16"
             height="16"
@@ -265,28 +297,48 @@
 <section class="payment-companies-section">
   <div class="container">
     <div class="payment-company-card">
-        <img src="/images/img/tapy-payment.svg" alt="payment-icon" i18n-alt="@@product-preview-payment-icon-alt">
+      <img
+        src="images/img/tapy-payment.svg"
+        alt="payment-icon"
+        i18n-alt="@@product-preview-payment-icon-alt"
+      />
 
-        <div class="payment-info">
-            <p i18n="@@product-preview-tapy-payment">SAR Pay a quarter of the value 11.77. Pay in installments over 3 months. No fees.</p>
-            <span i18n="@@know-more-btn">know more</span>
-        </div>
+      <div class="payment-info">
+        <p i18n="@@product-preview-tapy-payment">
+          SAR Pay a quarter of the value 11.77. Pay in installments over 3
+          months. No fees.
+        </p>
+        <span i18n="@@know-more-btn">know more</span>
+      </div>
     </div>
     <div class="payment-company-card">
-        <img src="/images/img/spoti-payment.svg" alt="payment-icon" i18n-alt="@@product-preview-payment-icon-alt">
+      <img
+        src="images/img/spoti-payment.svg"
+        alt="payment-icon"
+        i18n-alt="@@product-preview-payment-icon-alt"
+      />
 
-        <div class="payment-info">
-            <p i18n="@@product-preview-spoti-payment">We will divide the payment for your purchases into four installments at no cost.</p>
-            <span i18n="@@know-more-btn">know more</span>
-        </div>
+      <div class="payment-info">
+        <p i18n="@@product-preview-spoti-payment">
+          We will divide the payment for your purchases into four installments
+          at no cost.
+        </p>
+        <span i18n="@@know-more-btn">know more</span>
+      </div>
     </div>
     <div class="payment-company-card">
-        <img src="/images/img/tamra-payment.svg" alt="payment-icon" i18n-alt="@@product-preview-payment-icon-alt">
+      <img
+        src="images/img/tamra-payment.svg"
+        alt="payment-icon"
+        i18n-alt="@@product-preview-payment-icon-alt"
+      />
 
-        <div class="payment-info">
-            <p i18n="@@product-preview-tamra-payment">Pay only 586 SAR in 3 installments without fees.</p>
-            <span i18n="@@know-more-btn">know more</span>
-        </div>
+      <div class="payment-info">
+        <p i18n="@@product-preview-tamra-payment">
+          Pay only 586 SAR in 3 installments without fees.
+        </p>
+        <span i18n="@@know-more-btn">know more</span>
+      </div>
     </div>
   </div>
 </section>

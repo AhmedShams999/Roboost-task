@@ -44,9 +44,12 @@
       </div>
     </div>
     <div class="came-new-container">
-     <app-product 
-        *ngFor="let productIndex of visibleProductsCount; trackBy: trackByIndex">
-      </app-product>
+        @if (cameNewProducts) {
+          @for (index of visibleProductsCount; track index) {
+            <app-product [product]="cameNewProducts[index]">
+            </app-product>
+          }
+        }
     </div>
   </div>
 </section>

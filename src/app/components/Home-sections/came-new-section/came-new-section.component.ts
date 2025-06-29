@@ -1,6 +1,7 @@
-import { Component, Inject, LOCALE_ID, OnInit } from '@angular/core';
+import { Component, Inject, Input, LOCALE_ID, OnChanges, OnInit } from '@angular/core';
 import { ProductComponent } from "../../cards/product/product.component";
 import { CommonModule } from '@angular/common';
+import { IProduct } from '../../../models/product/products';
 
 @Component({
   selector: 'app-came-new-section',
@@ -8,10 +9,13 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./came-new-section.component.css'],
   imports: [ProductComponent,CommonModule]
 })
-export class CameNewSectionComponent implements OnInit {
- 
+export class CameNewSectionComponent implements OnInit, OnChanges {
+  @Input() cameNewProducts:IProduct[]|null = null
+  
   // Total number of products
-  allProducts = 12;
+  get allProducts(): number {
+    return this.cameNewProducts?.length || 0;
+  }
 
   currentIndex = 0;
   itemsToShow = 4;
@@ -23,14 +27,22 @@ export class CameNewSectionComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+      if (this.cameNewProducts) {
+        this.updateVisibleProducts();
+      }
+  }
+  ngOnChanges() {
+  if (this.cameNewProducts) {
+    this.currentIndex = 0; // Reset to start when products change
     this.updateVisibleProducts();
   }
+}
 
   updateVisibleProducts() {
     this.visibleProductsCount = [];
     for (let i = 0; i < this.itemsToShow; i++) {
       const index = (this.currentIndex + i) % this.allProducts;
-      this.visibleProductsCount.push(index + 1); // Adding 1 to make it 1-based instead of 0-based
+      this.visibleProductsCount.push(index);
     }
   }
 

@@ -3,6 +3,182 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" target-language="ar" datatype="plaintext" original="ng2.template">
     <body>
+     <trans-unit id="language-currency-eng" datatype="html">
+        <source>English - USD</source>
+        <target>الانجليزيه - دولار</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      </trans-unit>
+     <trans-unit id="cart.discount-placeholder" datatype="html">
+        <source>Enter discount code</source>
+        <target>أدخل كود الخصم</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Cart/Cart.component.html</context>
+          <context context-type="linenumber">82,83</context>
+        </context-group>
+      </trans-unit>
+     <trans-unit id="product-preview-selected-image-alt" datatype="html">
+        <source>previewed_img</source>
+        <target>previewed_img</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-preview/product-preview.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+       <trans-unit id="product.discount" datatype="html">
+        <source>Discount</source>
+        <target>خصم</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cards/product/product.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-details-info.product-details-btn-1" datatype="html">
+        <source> Product details </source>
+        <target>تفاصيل المنتج</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-info/product-info.component.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-details-info.product-details-btn-2" datatype="html">
+        <source> Product details </source>
+        <target>تفاصيل المنتج</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-info/product-info.component.html</context>
+          <context context-type="linenumber">8,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-details-info.product-reviews-btn" datatype="html">
+        <source> Product Reviews </source>
+        <target>مراجعات المنتج</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-info/product-info.component.html</context>
+          <context context-type="linenumber">11,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-details-info.paragraph-1" datatype="html">
+        <source>The Apple iPhone 11 is designed with a striking and beautiful body that will make you love looking at it at all times. The 6.1-inch Liquid Retina display captures your attention and all your senses like no other smartphone. The glass and aluminum design makes it durable and gives the phone a stunning appearance.</source>
+        <target>صُمم هاتف Apple iPhone 11 بجسم لافت وجميل يجعلك تحب النظر إليه في جميع الأوقات. شاشة Liquid Retina مقاس 6.1 بوصة تجذب انتباهك وجميع حواسك كما لم يفعل أي هاتف ذكي آخر. يجعله التصميم الزجاجي والألومنيوم متينًا ويمنح الهاتف مظهرًا مذهلاً.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-info/product-info.component.html</context>
+          <context context-type="linenumber">16,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-details-info.heading-1" datatype="html">
+        <source>For unforgettable moments</source>
+        <target>للحظات لا تُنسى</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-info/product-info.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-details-info.paragraph-2" datatype="html">
+        <source> The iPhone 11 Pro features a 6.1-inch display with a resolution of 828 x 1792 pixels. It is powered by Apple&apos;s A13 Bionic chip which ensures smooth performance whether you&apos;re using apps, Browse the web, or playing games. The phone comes with multiple storage options and advanced camera technology that captures stunning photos and videos in any lighting condition. The device also features improved battery life that can last all day, and it supports wireless charging and fast charging capabilities. </source>
+        <target> يتميز iPhone 11 Pro بشاشة مقاس 6.1 بوصة بدقة 828 × 1792 بكسل. يعمل بمعالج Apple A13 Bionic الذي يضمن أداءً سلسًا سواء كنت تستخدم التطبيقات أو تتصفح الويب أو تلعب الألعاب. يأتي الهاتف بخيارات تخزين متعددة وتقنية كاميرا متقدمة تلتقط صورًا ومقاطع فيديو مذهلة في أي ظروف إضاءة. يتميز الجهاز أيضًا بعمر بطارية محسّن يمكن أن يدوم طوال اليوم، ويدعم إمكانيات الشحن اللاسلكي والشحن السريع. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-info/product-info.component.html</context>
+          <context context-type="linenumber">27,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-details-info.paragraph-3" datatype="html">
+        <source> The iPhone 11 smartphone adds blazing speed to everything you do, thanks to the A12 Bionic chip featuring Neural Engine. This powerful chip helps smooth out intensive tasks. Whether it&apos;s shooting 4K video at 60 fps with extended dynamic range or relighting the subject in the foreground, this chip can do it all with impressive speed. Plus, </source>
+        <target> يضيف هاتف iPhone 11 الذكي سرعة فائقة لكل ما تفعله، بفضل شريحة A12 Bionic المزودة بمحرك Neural Engine. تساعد هذه الشريحة القوية في تسهيل المهام الشاقة. سواء كان الأمر يتعلق بتصوير فيديو بدقة 4K بمعدل 60 إطارًا في الثانية مع نطاق ديناميكي ممتد أو إعادة إضاءة الكائن في المقدمة، يمكن لهذه الشريحة أن تفعل كل ذلك بسرعة مذهلة. بالإضافة إلى ذلك، </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-info/product-info.component.html</context>
+          <context context-type="linenumber">38,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-details-info.heading-2" datatype="html">
+        <source>Smooth Performance</source>
+        <target>أداء سلس</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-info/product-info.component.html</context>
+          <context context-type="linenumber">46,47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-details-info.paragraph-4" datatype="html">
+        <source>This Apple smartphone features a 6.1-inch Liquid Retina display with HD technology, delivering clear and detailed visuals that take entertainment to a whole new level. Watch your favorite movies, exciting sports events, or browse various online content and enjoy them to the fullest, thanks to the exceptional integration of True Tone and Dolby Atmos technologies. The iPhone 11 delivers the highest quality visuals and brings them to life with a resolution of 1792 x 828 pixels. The oleophobic coating, resistant to fingerprints, ensures no unwanted marks on the screen, even after heavy use. Additionally, this smartphone has a long-lasting battery that provides hours of uninterrupted entertainment, making it the perfect travel companion.</source>
+        <target>يتميز هاتف Apple الذكي هذا بشاشة Liquid Retina مقاس 6.1 بوصة بتقنية HD، مما يوفر صورًا واضحة ومفصلة ترتقي بالترفيه إلى مستوى جديد تمامًا. شاهد أفلامك المفضلة، والأحداث الرياضية المثيرة، أو تصفح محتوى متنوعًا عبر الإنترنت واستمتع بها على أكمل وجه، بفضل التكامل الاستثنائي لتقنيات True Tone و Dolby Atmos. يقدم iPhone 11 أعلى جودة بصرية ويجعلها تنبض بالحياة بدقة 1792 × 828 بكسل. يضمن الطلاء المقاوم للزيوت، المقاوم لبصمات الأصابع، عدم وجود علامات غير مرغوب فيها على الشاشة، حتى بعد الاستخدام الكثيف. بالإضافة إلى ذلك، يحتوي هذا الهاتف الذكي على بطارية تدوم طويلاً توفر ساعات من الترفيه المتواصل، مما يجعله الرفيق المثالي للسفر.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-info/product-info.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="product-details-info.paragraph-5" datatype="html">
+        <source>The iPhone comes with 4GB of RAM, making multitasking faster than ever, while also quickly loading graphic-heavy games and video editing apps. You can store more entertainment content without deleting any previously saved data or photos, thanks to the 128GB built-in storage capacity. The iPhone 11 runs on iOS 13, making its use an unparalleled joy. This operating system adds a touch of excitement with features like system-wide Dark Mode, Sign in with Apple, and a new photo editing interface.</source>
+        <target>يأتي iPhone بذاكرة وصول عشوائي (RAM) سعة 4 جيجابايت، مما يجعل تعدد المهام أسرع من أي وقت مضى، بينما يقوم أيضًا بتحميل الألعاب الغنية بالرسومات وتطبيقات تحرير الفيديو بسرعة. يمكنك تخزين المزيد من محتوى الترفيه دون حذف أي بيانات أو صور محفوظة مسبقًا، بفضل سعة التخزين الداخلية البالغة 128 جيجابايت. يعمل iPhone 11 بنظام التشغيل iOS 13، مما يجعل استخدامه متعة لا مثيل لها. يضيف نظام التشغيل هذا لمسة من الإثارة مع ميزات مثل الوضع الداكن على مستوى النظام، وتسجيل الدخول باستخدام Apple، وواجهة جديدة لتحرير الصور.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/Product-details-sections/product-info/product-info.component.html</context>
+          <context context-type="linenumber">48,52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cart.order-summary" datatype="html">
+        <source> Order Summary </source>
+        <target>ملخص الطلب</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Cart/Cart.component.html</context>
+          <context context-type="linenumber">59,62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cart.product-total" datatype="html">
+        <source>Product Total</source>
+        <target>إجمالي المنتجات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Cart/Cart.component.html</context>
+          <context context-type="linenumber">63,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cart.do-you-have-discount" datatype="html">
+        <source>Do you have a discount code</source>
+        <target>هل لديك رمز خصم؟</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Cart/Cart.component.html</context>
+          <context context-type="linenumber">69,73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cart.add-discount" datatype="html">
+        <source>Add</source>
+        <target>إضافة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Cart/Cart.component.html</context>
+          <context context-type="linenumber">80,83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cart.delivery" datatype="html">
+        <source>Delivery</source>
+        <target>التوصيل</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Cart/Cart.component.html</context>
+          <context context-type="linenumber">85,87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cart.delivery-unit" datatype="html">
+        <source>SAR</source>
+        <target>ريال</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Cart/Cart.component.html</context>
+          <context context-type="linenumber">88,90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cart.shipping-tax-included" datatype="html">
+        <source>Free shipping included with tax <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>شحن مجاني شامل الضريبة <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Cart/Cart.component.html</context>
+          <context context-type="linenumber">93,94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cart.complete-order" datatype="html">
+        <source> Complete Order </source>
+        <target>إتمام الطلب</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/Cart/Cart.component.html</context>
+          <context context-type="linenumber">97,99</context>
+        </context-group>
+      </trans-unit>
     <trans-unit id="products-list.searchProducts-placeholder" datatype="html">
       <source>Search products...</source>
       <target>ابحث عن المنتجات...</target>

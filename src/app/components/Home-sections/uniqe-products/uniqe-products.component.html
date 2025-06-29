@@ -24,12 +24,10 @@
       </div>
 
       <div class="uniqe-products-container">
-        <app-product></app-product>
-        <app-product></app-product>
-        <app-product></app-product>
-        <app-product></app-product>
-        <app-product></app-product>
-        <app-product></app-product>
+        @for (product of uniqeProducts; track product.id) {
+          <app-product [product]="product"></app-product>
+
+        }
       
       </div>
   </div>

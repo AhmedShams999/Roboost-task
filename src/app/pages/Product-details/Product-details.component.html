@@ -2,6 +2,10 @@
   <app-route-back [routesBack]="routeBack"></app-route-back>
 </div>
 
-<app-product-preview></app-product-preview>
+<app-product-preview [product]="product"></app-product-preview>
 <app-product-info></app-product-info>
-<app-similar-products></app-similar-products>
+
+@if(product){
+  <app-similar-products [productCategory]="product.category"></app-similar-products>
+
+}

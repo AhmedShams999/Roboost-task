@@ -1,12 +1,12 @@
-<div class="product-card">
+<div class="product-card" (click)="goToProductDetails(product&&product.id)">
   <div class="product-image-container">
     <div class="sale-badge-container">
-      <span class="sale-badge"><span i18n="@@product.discount">خصم</span>&nbsp;{{product?.discountPercentage}}%</span>
+      <span class="sale-badge"><span i18n="@@product.discount">Discount</span>&nbsp;{{product?.discountPercentage}}%</span>
       <div class="sale-badge-triangle"></div>
     </div>
     <img
       [src]="product?.thumbnail"
-      alt="سماعة بلوتوث"
+      alt="Product-img"
       class="product-image"
     />
   </div>
@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="btn-container">
-      <button class="add-to-cart-btn" (click)="addToCart(product)" i18n="@@add-cart-btn">
+      <button class="add-to-cart-btn" (click)="addToCart(product);$event.stopPropagation()" i18n="@@add-cart-btn">
         <svg
           width="14"
           height="14"

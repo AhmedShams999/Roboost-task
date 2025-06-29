@@ -1,50 +1,68 @@
-<section class="hero-section">
+<section
+  class="hero-section"
+  (mouseenter)="onMouseEnter()"
+  (mouseleave)="onMouseLeave()"
+>
   <div class="background-slider">
     <div
       class="background-track"
-      [style.transform]="'translateX(' + currentSlide * -100 + '%)'"
+
     >
       <div
         class="background-slide"
         *ngFor="let slide of slides"
-        [style.background-image]="'url(' + slide.image + ')'"
+        [style.background-image]="'url(images/img/Banner.png)'"
       ></div>
     </div>
   </div>
-  <!-- <div class="hero-overlay"></div>
-
-  <div class="decorative-circles">
-    <div class="circle circle-1"></div>
-    <div class="circle circle-2"></div>
-  </div> -->
-
   <div class="hero-content">
     <div class="container">
       <div class="main-content">
         <button class="nav-btn prev-btn" (click)="prevSlide()">
           @if(locale == 'ar'){
-            <img src="/images/Icons/arrow-right.svg" i18n-alt="arrow-right" alt="arrow-right">
+          <img
+            src="images/Icons/arrow-right.svg"
+            i18n-alt="arrow-right"
+            alt="arrow-right"
+          />
 
           }@else {
-            <img src="/images/Icons/arrow-left.svg" i18n-alt="arrow-left" alt="arrow-left">
+          <img
+            src="images/Icons/arrow-left.svg"
+            i18n-alt="arrow-left"
+            alt="arrow-left"
+          />
           }
         </button>
         <div>
-          <h1 class="hero-title" i18n="@@hero-section.offers">Best Discounts 2022</h1>
-          <p class="hero-description" i18n="@@hero-section.offers-des">Salla Store provides you with everything you need from electronics and home furniture in addition to the best discounts on products. Shop now and enjoy all the discounts on products.</p>
+          <h1 class="hero-title" i18n="@@hero-section.offers">
+            Best Discounts 2022
+          </h1>
+          <p class="hero-description" i18n="@@hero-section.offers-des">
+            Salla Store provides you with everything you need from electronics
+            and home furniture in addition to the best discounts on products.
+            Shop now and enjoy all the discounts on products.
+          </p>
           <button class="cta-button" i18n="@@show-more-btn">View More</button>
         </div>
         <button class="nav-btn next-btn" (click)="nextSlide()">
           @if(locale == 'ar'){
-            <img src="/images/Icons/arrow-left.svg" i18n-alt="arrow-left" alt="arrow-left">
+          <img
+            src="images/Icons/arrow-left.svg"
+            i18n-alt="arrow-left"
+            alt="arrow-left"
+          />
 
           }@else {
-            <img src="/images/Icons/arrow-right.svg" i18n-alt="arrow-right" alt="arrow-right">
+          <img
+            src="images/Icons/arrow-right.svg"
+            i18n-alt="arrow-right"
+            alt="arrow-right"
+          />
           }
         </button>
-
       </div>
-  
+
       <div class="slider-controls">
         <div class="slider-dots">
           <button
