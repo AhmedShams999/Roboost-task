@@ -73,4 +73,8 @@ export class HeaderComponent implements OnInit {
     console.log('Cart clicked');
   }
 
+  onLogoutClick(){
+    this.authService.logout();
+  }
+
 }
