@@ -49,12 +49,7 @@ export class RegisterComponent implements OnInit {
     });
   }
 
-  /**
-   * Custom validator to check if password and confirm password match.
-   * Applied at the FormGroup level.
-   * @param control The FormGroup to validate.
-   * @returns A ValidationErrors object if passwords do not match, otherwise null.
-   */
+
   passwordMatchValidator(control: AbstractControl): ValidationErrors | null {
     const password = control.get('password');
     const confirmPassword = control.get('confirmPassword');
@@ -77,9 +72,7 @@ export class RegisterComponent implements OnInit {
     }
   }
 
-  /**
-   * Toggles the visibility of the password field.
-   */
+
   togglePasswordVisibility(field: 'password' | 'confirmPassword') {
     if (field === 'password') {
       this.showPassword = !this.showPassword;
@@ -88,11 +81,7 @@ export class RegisterComponent implements OnInit {
     }
   }
 
-  /**
-   * Handles the form submission.
-   * If the form is valid, it simulates a registration API call and redirects on success.
-   * Otherwise, it marks all fields as touched to show validation errors.
-   */
+
   onSubmit() {
     // Check if the form is valid
     if (this.registerForm.valid) {
@@ -130,11 +119,7 @@ export class RegisterComponent implements OnInit {
     }
   }
 
-  /**
-   * Helper method to get a form control.
-   * @param controlName The name of the form control.
-   * @returns The form control.
-   */
+
   getFormControl(controlName: string) {
     return this.registerForm.get(controlName);
   }

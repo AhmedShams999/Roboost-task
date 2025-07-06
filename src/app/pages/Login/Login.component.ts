@@ -57,18 +57,11 @@ export class LoginComponent implements OnInit {
     }
   }
 
-  /**
-   * Toggles the visibility of the password field.
-   */
   togglePasswordVisibility() {
     this.showPassword = !this.showPassword;
   }
 
-  /**
-   * Handles the form submission.
-   * If the form is valid, it simulates a login API call and redirects on success.
-   * Otherwise, it marks all fields as touched to show validation errors.
-   */
+
   onSubmit() {
     // Check if the form is valid
     if (this.loginForm.valid) {
@@ -105,11 +98,7 @@ export class LoginComponent implements OnInit {
     }
 
   }
-  /**
-   * Helper method to get a form control.
-   * @param controlName The name of the form control.
-   * @returns The form control.
-   */
+
   getFormControl(controlName: string) {
     return this.loginForm.get(controlName);
   }

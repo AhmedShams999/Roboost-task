@@ -20,32 +20,39 @@ export class ProductPreviewComponent implements OnInit {
 
   constructor(private cartService: CartService) {}
 
-    ngOnChanges(changes: SimpleChanges): void {
+  ngOnChanges(changes: SimpleChanges): void {
     if (changes['product'] && changes['product'].currentValue) {
+      console.log(changes['product'] , changes['product'].currentValue);
       if (this.product?.images && this.product.images.length > 0) {
         this.selectedImageUrl = this.product.images[0];
         console.log('[ProductPreviewComponent] Default selected image set in ngOnChanges:', this.selectedImageUrl);
       } 
     }
   }
-  ngOnInit(): void {
-  }
-   getFilledStarsArray(): number[] {
 
-    return Array.from(Array(Math.floor(this.product?.rating || 0)).keys());
+  ngOnInit(): void {
+
+  }
+
+  getFilledStarsArray(): number[] {
+    // Here Array(Math.round(this.product?.rating || 0)).keys() it return an Iterator type so 
+    // we need to user Array.from to make it an normal array
+    return Array.from(Array(Math.round(this.product?.rating || 0)).keys());
   }
 
   getEmptyStarsArray(): number[] {
 
-    const filledStars = Math.floor(this.product?.rating || 0);
+    const filledStars = Math.round(this.product?.rating || 0);
     const totalStars = 5;
     const emptyStars = totalStars - filledStars;
     return Array.from(Array(emptyStars).keys());
   }
+
   selectImage(imageUrl: string): void {
     this.selectedImageUrl = imageUrl;
     console.log('Selected image:', imageUrl);
   }
+
   increaseQuantityToAdd(): void {
     this.quantityToAdd++;
     console.log(`Quantity to add/process: ${this.quantityToAdd}`);

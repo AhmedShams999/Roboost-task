@@ -25,21 +25,13 @@ export class CartComponent implements OnInit {
   get totalItems(): number | null {
     return this.cartService.totalItems();
   }
+
   get cartTotal(): string | null {
     return this.cartService.cartTotal();
   }
+
   ngOnInit(): void {}
 
-  onQuantityChange(item: ICartItem, event: Event): void {
-    const inputElement = event.target as HTMLInputElement;
-    let newQuantity = parseInt(inputElement.value, 10);
-
-    if (isNaN(newQuantity) || newQuantity < 1) {
-      newQuantity = 1;
-      inputElement.value = '1';
-    }
-    this.cartService.updateQuantity(item.product.id, newQuantity);
-  }
 
   incrementQuantity(item: ICartItem): void {
     this.cartService.updateQuantity(item.product.id, item.quantity + 1);
@@ -64,23 +56,5 @@ export class CartComponent implements OnInit {
     this.cartService.proceedToCheckout();
     // Potentially navigate to a checkout route here
   }
-  // getTotalItems(): number {
-  //   return this.cartItems.reduce((total, item) => total + item.quantity, 0);
-  // }
 
-  // getSubtotal(): number {
-  //   return this.cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
-  // }
-
-  // getTotalShipping(): number {
-  //   return this.cartItems.reduce((total, item) => total + item.shipping, 0);
-  // }
-
-  // getTotal(): number {
-  //   return this.getSubtotal() + this.getTotalShipping();
-  // }
-
-  formatPrice(price: number): string {
-    return '$' + price.toFixed(2);
-  }
 }

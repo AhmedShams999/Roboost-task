@@ -7,6 +7,7 @@ import { IProduct } from '../../models/product/products';
 })
 export class CartService {
  private readonly LOCAL_STORAGE_KEY = 'shopping_cart_items';
+
   private _cartItems: WritableSignal<ICartItem[]> = signal([]);
 
   public readonly cartItems = this._cartItems.asReadonly();
@@ -15,13 +16,13 @@ export class CartService {
   );
   public readonly cartTotal = computed(() =>
     this._cartItems().reduce(
-      (sum, item) => sum + item.product.price * item.quantity,
+      (sum, item) => sum + ((item.product.price *  (100 - item.product.discountPercentage) / 100) * item.quantity),
       0
     ).toFixed(2)
   );
 
   constructor() {
-     this.loadCartFromLocalStorage();
+    this.loadCartFromLocalStorage();
     // Effect to save cart to localStorage whenever _cartItems changes (still needed!)
     effect(() => {
       const currentCart = this._cartItems();

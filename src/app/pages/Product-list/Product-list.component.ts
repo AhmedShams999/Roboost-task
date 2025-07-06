@@ -158,12 +158,12 @@ export class ProductListComponent implements OnInit {
   };
 
   selectedPriceRange = {
-    
     min: this.priceRange.min,
     max: this.priceRange.max,
   };
 
   private searchSubscription: Subscription | undefined;
+
   constructor(private productService: ProductService) {}
 
   ngOnInit() {
@@ -189,12 +189,11 @@ export class ProductListComponent implements OnInit {
         categories.forEach((cat) => {
           this.sections.category.options.push({
             id: cat.name,
-            name: cat.name.charAt(0).toUpperCase() + cat.name.slice(1), // Capitalize category name for display
-            count: 0, // Counts for categories need a separate API or client-side calculation
+            name: cat.name.charAt(0).toUpperCase() + cat.name.slice(1), 
+            count: 0,
             checked: false,
           });
         });
-        this._applyAllFilters();
       },
       error: (err) => {
         this.errorMessage.set(err.message || 'Failed to load categories.');
@@ -241,7 +240,6 @@ export class ProductListComponent implements OnInit {
     if (this.selectedPriceRange.max < this.selectedPriceRange.min) {
       this.selectedPriceRange.max = this.selectedPriceRange.min;
     }
-    console.log('Price range changed:', this.selectedPriceRange);
     this._applyAllFilters();
   }
 
@@ -250,7 +248,6 @@ export class ProductListComponent implements OnInit {
     if (value <= this.selectedPriceRange.max) {
       this.selectedPriceRange.min = value;
     }
-    console.log('Min price changed:', this.selectedPriceRange);
   }
 
   onMaxChange(event: any) {
@@ -258,18 +255,17 @@ export class ProductListComponent implements OnInit {
     if (value >= this.selectedPriceRange.min) {
       this.selectedPriceRange.max = value;
     }
-    console.log('Max price changed:', this.selectedPriceRange);
   }
 
   getMinPercent(): number {
     const range = this.priceRange.max - this.priceRange.min;
-    if (range === 0) return 0; // Avoid division by zero
+    if (range === 0) return 0; 
     return ((this.selectedPriceRange.min - this.priceRange.min) / range) * 100;
   }
 
   getMaxPercent(): number {
     const range = this.priceRange.max - this.priceRange.min;
-    if (range === 0) return 0; // Avoid division by zero
+    if (range === 0) return 0; 
     return (
       100 - ((this.selectedPriceRange.max - this.priceRange.min) / range) * 100
     );
@@ -286,8 +282,7 @@ export class ProductListComponent implements OnInit {
 
   toggleMobileFilters(): void {
     this.showMobileFilters = !this.showMobileFilters;
-    
-    // Prevent body scroll when filters are open
+
     if (this.showMobileFilters) {
       document.body.style.overflow = 'hidden';
     } else {
@@ -300,9 +295,16 @@ export class ProductListComponent implements OnInit {
     document.body.style.overflow = 'auto';
   }
 
+  getTotalPageAfterLoadMore(): number{
+    if(this.products$){
+      return this.totalProducts() - this.products$.length;
+    }
+    return this.totalProducts();
+  }
+
   // Close mobile filters when clicking outside or on escape
   @HostListener('document:keydown.escape', ['$event'])
-  onEscapeKey(event: KeyboardEvent): void {
+  onEscapeKey(): void {
     if (this.showMobileFilters) {
       this.closeMobileFilters();
     }
@@ -310,13 +312,13 @@ export class ProductListComponent implements OnInit {
 
   // Close filters on window resize to desktop
   @HostListener('window:resize', ['$event'])
-  onResize(event: any): void {
+  onResize(): void {
     if (window.innerWidth > 768 && this.showMobileFilters) {
       this.closeMobileFilters();
     }
   }
 
-   getActiveFiltersCount(): number {
+  getActiveFiltersCount(): number {
     let count = 0;
     
     // Count category filters
@@ -328,13 +330,13 @@ export class ProductListComponent implements OnInit {
     // Count rating filters
     count += this.sections.rating.options.filter(option => option.checked).length;
     
-    // Count price filter (if different from default)
+    
     if (this.selectedPriceRange.min !== this.priceRange.min || 
         this.selectedPriceRange.max !== this.priceRange.max) {
       count += 1;
     }
     
-    // Count search query
+   
     if (this.searchQuery && this.searchQuery.trim().length > 0) {
       count += 1;
     }
@@ -342,24 +344,15 @@ export class ProductListComponent implements OnInit {
     return count;
   }
 
-   clearAllFilters(): void {
+  clearAllFilters(): void {
     // Clear search
     this.searchQuery = '';
-    
-    // Clear all checkboxes
-    this.sections.category.options.forEach(option => option.checked = false);
-    this.sections.brand.options.forEach(option => option.checked = false);
-    this.sections.rating.options.forEach(option => option.checked = false);
-    
-    // Reset price range
-    this.selectedPriceRange = {
-      min: this.priceRange.min,
-      max: this.priceRange.max
-    };
+    this.resetAllFiltersToDefault();
     
     // Apply filters (your existing logic)
     this._applyAllFilters();
   }
+
   private executeSearch(searchTerm: string): void {
     this.isLoading.set(true);
     this.productService.searchProducts(searchTerm);
@@ -401,6 +394,7 @@ export class ProductListComponent implements OnInit {
     const selectedRatingOption = this.sections.rating.options.find(
       (opt) => opt.checked && opt.id !== 'all-rating'
     ) as RatingOption;
+    
     if (selectedRatingOption) {
       const minRating = parseInt(selectedRatingOption.id.split('-')[0]);
       if (!isNaN(minRating)) {
@@ -413,8 +407,6 @@ export class ProductListComponent implements OnInit {
     filters.minPrice = this.selectedPriceRange.min;
     filters.maxPrice = this.selectedPriceRange.max;
 
-    this.searchQuery = '';
-    this.productService.searchProducts('');
 
     this.isLoading.set(true);
 

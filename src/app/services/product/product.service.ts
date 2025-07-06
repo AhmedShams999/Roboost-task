@@ -65,12 +65,8 @@ export class ProductService {
               const meetsMaxRating = filters.maxRating === undefined || product.rating <= filters.maxRating;
               return meetsMinRating && meetsMaxRating;
             });
-            console.log('Client-side rating filtered products:', filteredProducts);
           }
 
-          // Return a new res object with the filtered products.
-          // The 'total' from the API is maintained, which is a known limitation for infinite scroll
-          // when filtering client-side.
           return { ...res, products: filteredProducts };
         }),
         tap(res=>{
@@ -99,6 +95,7 @@ export class ProductService {
       catchError(this.handleError)
     );
   }
+
   allProducts(): Observable<IProductResponse> {
     return this.http.get<IProductResponse>(this.apiUrl+'/products')
   }
@@ -116,6 +113,7 @@ export class ProductService {
       })
     )
   }
+  
   searchProducts(query:string):void{
     this.currentSearchQuerySubject.next(query);
 
@@ -125,11 +123,11 @@ export class ProductService {
   }
 
   applyFilters(filters: Omit<ProductFilterParams, 'limit' | 'skip' | 'searchQuery'>): void {
-    // Update the filters subject, which will trigger a new API call
+  
     this.currentFilterSubject.next(filters);
-    // Clear any active search query when filters are applied
+  
     this.currentSearchQuerySubject.next('');
-    // Reset pagination to start from the beginning of filtered results
+    
     this.currentSkipSubject.next(0);
   }
 

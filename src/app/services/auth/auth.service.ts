@@ -27,8 +27,6 @@ export class AuthService {
     try {
       const tokenData = JSON.parse(atob(token.split('.')[1]));
       const currentTime = Math.floor(Date.now() / 1000);
-      console.log(tokenData.exp);
-      console.log(tokenData.exp > currentTime);
       return tokenData.exp > currentTime;
     } catch (error) {
       console.log(error);
@@ -42,8 +40,6 @@ export class AuthService {
 
   constructor(private http: HttpClient,private router: Router) {
     this.initializeAuthState();
-
-    console.log(this.authState());
   }
 
   private initializeAuthState(): void{

@@ -341,8 +341,7 @@
       <div class="load-more-btn" (click)="onLoadMore()">
         <button >
           <p i18n="@@show-more-btn">Show More</p>
-          
-          {{ totalProducts() - products$.length }}
+          {{ getTotalPageAfterLoadMore()  }}
         </button>
       </div>
     </div>

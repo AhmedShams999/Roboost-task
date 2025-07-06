@@ -50,7 +50,7 @@ export interface Star {
 export interface RatingOption {
   id: string;
   name: string;
-  stars?: Star[]; // stars is optional as it's only for rating
+  stars?: Star[]; 
   count: number;
   checked: boolean;
 }
@@ -61,12 +61,12 @@ export interface FilterSection {
   options: (FilterOption | RatingOption)[];
 }
 
-// Using an index signature for FilterSections to allow dynamic access
+
 export interface FilterSections {
   [key: string]: FilterSection;
   category: FilterSection;
   brand: FilterSection;
-  rating: { // <--- Explicitly define rating section options as RatingOption[]
+  rating: { 
     title: string;
     expanded: boolean;
     options: RatingOption[];

@@ -43,5 +43,5 @@ export const routes: Routes = [
     component: RegisterComponent,
     title: "Register"
   },
-  { path: '**', redirectTo: '' }, // Fallback for invalid routes
+  { path: '**', redirectTo: '' }, // WildCard
 ];

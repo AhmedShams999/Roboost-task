@@ -9,12 +9,10 @@ export class DiscountedPricePipe implements PipeTransform {
     if (price === null || price === undefined || discountPercentage === null || discountPercentage === undefined) {
       return null;
     }
-
-    // Ensure discountPercentage is treated as a percentage
+    
     const discountFactor = (100 - discountPercentage) / 100;
     const discountedPrice = price * discountFactor;
 
-    // Optional: Round to two decimal places for currency
     return parseFloat(discountedPrice.toFixed(2));
   }
 

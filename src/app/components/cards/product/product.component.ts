@@ -14,15 +14,16 @@ import { Router } from '@angular/router';
 })
 export class ProductComponent implements OnInit {
   @Input() product:IProduct|null = null;
-constructor(private cartService:CartService,private router:Router) { }
+  constructor(private cartService:CartService,private router:Router) { }
 
   ngOnInit() {
   }
 
-  // Modified addToCart to fetch from localStorage, update, and then send back
+
   addToCart(product:IProduct |null):void{
     if(product){
       let currentCart: ICartItem[] = [];
+
       if (typeof localStorage !== 'undefined') {
         const storedCart = localStorage.getItem('shopping_cart_items');
         if (storedCart) {
@@ -40,6 +41,7 @@ constructor(private cartService:CartService,private router:Router) { }
       const existingItemIndex = currentCart.findIndex(item => Number(item.product.id) === Number(product.id)); // IMPORTANT: Ensure type consistency here!
 
       if (existingItemIndex > -1) {
+        
         updatedCart = [...currentCart]; // Create a shallow copy to avoid direct mutation
         updatedCart[existingItemIndex] = {
           ...updatedCart[existingItemIndex],
